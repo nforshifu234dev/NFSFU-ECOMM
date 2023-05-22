@@ -1,0 +1,237 @@
+@media screen and (max-width:1000px) {
+    
+    .display-none-on-small
+    {
+        display: none ;
+    }
+
+    .display-block-on-small
+    {
+        display: block ;
+    }
+
+ 
+    .links-and-icon-container 
+    {
+        position: fixed;
+        top: 0;
+        left: -200vh;
+        width: 100vw;
+        height: 100vh;
+        flex-direction: column;
+        background: var(--white-color);
+        text-align: center;
+        /* display: none !important; */
+    }
+
+    /* .links-and-icon-container .close-button
+    {
+        padding: 1rem;
+        border: red solid 2px;
+        position: absolute;
+        top: 0;
+        right: 0;
+    } */
+
+    .navigation-bar .logo .list-inline-item
+    {
+        display: none;
+    }
+
+    .contents
+    {
+        flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+    }
+
+    .contents .categories
+    {
+        width: 100%;
+    }
+
+    .pdct-card .image {
+        width: 100%;
+    }
+
+    .ui-search-modal-small-slide-in {
+        transition: 1s;
+        /* top: 0; */
+        left: 0;
+    }
+      
+    .ui-search-modal-small-slide-out {
+        transition: 1s;
+        top: -100vh;
+    }
+
+    .navigation-links
+    {
+        width: 100%;
+        height: max-content;
+        margin-top: 50px;
+        /* border: red solid 2px; */
+    }
+
+    .navigation-links .nav-link
+    {
+        display: flex;
+        height: 70px;
+        width: 100%;
+    }
+
+    .navigation-bar .icons
+    {
+        margin-top: 50px;
+        /* border: red solid 2px; */
+    }
+
+    .navigation-bar .icons .icon
+    {
+        margin: 0 15px;
+    }
+
+    .product-details
+    {
+        flex-direction: column-reverse;
+    }
+
+    .product-details .details
+    {
+        width: 100%;
+    }
+
+    .product-details .images
+    {
+        width: 100%;
+    }
+    
+    .product-btn button
+    {
+        width: 100%;
+    }
+
+    .product-long-description .heading
+    {
+        text-align: center !important;
+        border-top: var(--black-color) solid 1px;
+        margin-top: 50px;
+    }
+
+    .product-long-description .heading h2
+    {
+        width: 100%;
+    }
+
+    .product-details .details .product-qty 
+    {
+        flex-direction: column;
+    }
+
+    .product-details .details .product-qty label,
+    .product-details .details .product-qty input
+    {
+        display: block;
+        width: 100%;
+    }
+
+    .product-details .details .product-qty label
+    {
+        margin-bottom: 20px;
+        font-weight: 600;
+    }
+
+    .products-container .product-card {
+        border-inline-start: none;
+    }
+
+    .products-container .product-card .product-name
+    {
+        width: 100%;
+    }
+    
+    .product-category .heading h2,
+    .products-container .product-card .product-name,
+    .products-container .product-card .product-price
+    {
+        text-align: center;
+    }
+
+    .product-category .heading
+    {
+        flex-direction: column;
+        /* align-items: center; */
+        /* justify-content: center; */
+    }
+
+    .product-category .heading h2
+    {
+        text-align: center;
+    }
+
+    .product-category .heading .view-more
+    {
+        margin-bottom: 20px;
+    }
+
+    .pdct-card
+    {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    .pdct-card .details
+    {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .pdct-card .details .prdct-nme
+    {
+        font-size: calc(100% + 0.7rem);
+    }
+
+    .pdct-card .details .btn
+    {
+        width: 100%;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .product-category .heading
+    {
+        flex-direction: column;
+        -ms-flex-direction: column;
+        height: max-content; 
+        padding: 1rem;
+    }
+
+    .product-category .heading a
+    {
+        margin: 10px 0;
+    }
+
+
+
+    .dashboard-card
+    {
+        width: 100% !important;
+    }
+
+}
+
+@media screen and (min-width:1001px) {
+    
+    .display-none-on-large
+    {
+        display: none ;
+    }
+    
+}
+
+@media screen and (max-width:300px) {
+    
+
+    
+}
