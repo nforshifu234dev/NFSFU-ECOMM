@@ -13,7 +13,6 @@
     {
         
         $chechkIfDBExistQuery = $conn->query( " SELECT COUNT(*) FROM INFORMATION_SCHEMA.SCHEMATA  WHERE SCHEMA_NAME = '$dbName' " );
-        // return either 0 or 1
         return $chechkIfDBExistQuery->fetchColumn();
 
     }

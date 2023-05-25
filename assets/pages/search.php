@@ -34,7 +34,6 @@
 
                     $product_images = explode( ",", $product_images );
 
-                    // echo "KIH";
 
                     if ( intval( $product_visibility ) === 1 ):
 
@@ -43,7 +42,6 @@
                     <div class="product-card card col">
 
                         <div class="product-image ">
-                            <!-- listen if the image link response is 200 else display default product image -->
 
                             <img class="card" src="<?php echo $product_images[0] ?>" alt="">
 

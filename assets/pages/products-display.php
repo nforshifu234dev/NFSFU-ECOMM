@@ -110,7 +110,6 @@
             <?php else: ?>
         
         <?php 
-            // loadNoProductsMessage(  $dbConn );
         ?>
             
         <?php endif; ?> 

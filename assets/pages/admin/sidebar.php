@@ -36,12 +36,6 @@
             {
                 echo "false";
             }
-        
-            // if( file_exists('pages/sidenav/' . $userDetails['user_role'] . ".sidebar.php") )
-            // {
-                // echo "Hi";
-                // include_once "pages/sidenav/" . $userDetails['user_role'] . ".sidebar.php";
-            // }
 
          
         ?>

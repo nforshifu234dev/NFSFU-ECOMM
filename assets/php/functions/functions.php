@@ -1,16 +1,11 @@
 <?php
 
-    // require_once __DIR__ . "/../config.php";
-    // $dbConn = $connectionHandler;
 
-    // echo $dbConn;
 
     function chechkIfDataBaseExists(PDO $conn, string $dbName):bool
     {
         
-        // $chechkIfDbExistConn = new PDO( "mysql:host=$db_host;", $db_username, $db_password );
         $chechkIfDBExistQuery = $conn->query( " SELECT COUNT(*) FROM INFORMATION_SCHEMA.SCHEMATA  WHERE SCHEMA_NAME = '$dbName' " );
-        // return either 0 or 1
         return $chechkIfDBExistQuery->fetchColumn();
 
     }  
@@ -29,22 +24,16 @@ function chechkSiteVisibilityStatus( PDO $dbConn )
     if ( !$stmt->execute() )
     {
 
-        // $_SESSION["error_msg"] = "FALSE";
         $status = false;
 
     }
     else
     {
         $r = $stmt->fetch();
-        // echo "<pre>";
-        // var_dump($r);
-        // echo "</pre>";
 
         $status = $r["site_details_detail_info_value"];
         $status = intval($status);
 
-        // echo "<br>";
-        // echo $status;
 
         return $status;
 
@@ -60,29 +49,22 @@ function chechkSiteVisibilityStatusAndRedirect($dbConn)
     {
 
         header("Location: offline.php");
-        // loadPage("offline-page.php");
 
     }
     else if ( chechkSiteVisibilityStatus($dbConn) === 2 )
     {
 
-        // adding new product
-        // loadPage("maintainance.php");
         header("Location: maintainance.php");
 
     }
     else if ( chechkSiteVisibilityStatus($dbConn) === 3 )
     {
 
-        // adding new product
-        // loadPage("maintainance.php");
         header("Location: coming-soon.php");
 
     }
     else if ( chechkSiteVisibilityStatus($dbConn) != 1 )
     {
-        // displayHtmlPage();
-        // echo "An Option diffrent from 0, 1, 2";
 
     }
 
@@ -125,7 +107,6 @@ function getUserDetailsUsingUsername(PDO $dbConn, string $username):bool | array
 {
     
     $query = "SELECT * FROM table_users WHERE user_username = :username OR user_email = :username OR user_id = :username  LIMIT 1";
-    // $query = "SELECT * FROM table_products ";
 
     $stmt = $dbConn->prepare($query);
     $stmt->bindParam(":username", $username);
@@ -162,7 +143,6 @@ function getAllSiteInformation(PDO $dbConn):mixed
 
     $stmt->execute();
 
-    // how to get PDO ERROR
 
     $products = $stmt->fetchAll();
 
@@ -182,7 +162,6 @@ function getAllUsers(PDO $dbConn, int $offsetValue = 0, int $number_of_items = 5
 
     $stmt->execute();
 
-    // how to get PDO ERROR
 
     $products = $stmt->fetchAll();
 
@@ -202,7 +181,6 @@ function getAllProducts(PDO $dbConn, int $offsetValue = 0, int $number_of_items 
 
     $stmt->execute();
 
-    // how to get PDO ERROR
 
     $products = $stmt->fetchAll();
 
@@ -223,7 +201,6 @@ function getAllCategories(PDO $dbConn, int $offsetValue = 0, int $number_of_item
 
     $stmt->execute();
 
-    // how to get PDO ERROR
 
     $products = $stmt->fetchAll();
 
@@ -328,7 +305,6 @@ function getAllHiddenProductsUsingLimits(PDO $dbConn, int $offsetValue = 0, int 
 
     $stmt->execute();
 
-    // how to get PDO ERROR
 
 
     $products = $stmt->fetchAll();
@@ -351,7 +327,6 @@ function getProductsDetails(PDO $dbConn, string $identifier)
     if ( !$stmt->execute() )
     {
 
-        // $_SESSION["error_msg"] = "FALSE";
         $status = false;
 
     }
@@ -374,7 +349,6 @@ function getProductsRandomly( PDO $dbConn , int $number_of_items_to_display = 1,
 
     $stmt = $dbConn->prepare($query);
 
-    // $stmt->bindParam(":product_category", $category_name);
 
     $stmt->execute();
 
@@ -391,7 +365,6 @@ function getCategoriesRandomly( PDO $dbConn , int $number_of_items_to_display = 
 
     $stmt = $dbConn->prepare($query);
 
-    // $stmt->bindParam(":product_category", $category_name);
 
     $stmt->execute();
 
@@ -535,7 +508,6 @@ function createNewUser(PDO $dbConn, array $values)
     $stmt->bindParam(":user_password", $user_password);
     $stmt->bindParam(":user_role", $user_role);
     $stmt->bindParam(":user_number_of_orders", $user_number_of_orders);
-    // $stmt->bindParam(":user", $user_);
 
 
 
@@ -667,7 +639,6 @@ function updateSiteLastUpdatedTime( PDO $dbConn , string $valueToBeUpdated, int 
     $stmt = $dbConn->prepare($query);
 
     $stmt->bindParam(":info", $valueToBeUpdated);
-    // $stmt->bindParam(":id", $valueToBeUpdatedId);
 
     if ( $stmt->execute() === true )
     {
@@ -797,7 +768,6 @@ function searchProduct(PDO $dbConn, string $searchTerm, int $offsetValue = 0, in
 
         $result = $stmt->fetchAll();
 
-        // var_dump($result);
 
         return $result;
 
@@ -826,16 +796,12 @@ function chechkIfLoggedIn()
         )
         {
     
-            // echo "LOGGED IN";
             return true;
-            // header("location: $redirectUrl?from-logged-in" );
             
     
         }
         else
         {
-            // echo "NOT LOGGED IN";
-            // header("location $redirectUrl");
             return false;
     
     
@@ -859,7 +825,6 @@ function chechkNumberOfProductsANdCategoriesAndDisplayMessage( PDO $dbConn )
 
     if ( $total_number_of_products === 0 && $total_number_of_categories === 0 )
     {
-        // echo $message;
         loadNoProductsMessage($dbConn);
         exit;
     }

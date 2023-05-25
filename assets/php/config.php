@@ -4,6 +4,4 @@
 
     $dbConn = $connectionHandler;
 
-    // echo "gjkhgi";
-    // echo $dbConn;
 ?>

@@ -1,14 +1,7 @@
 <div class="categories">
 <?php 
 
-// if ( chechkSiteVisibilityStatus($dbConn) != 1 )
-// {
-// 	echo "";
-// }
-// else
-// {
-	
-// }
+
 
 ?>
 <?php 
@@ -29,8 +22,7 @@ if ( count( $catys ) != 0 ) :
         </div>
 
         <?php 
-            // $catys = getCategoriesRandomly($dbConn, 4); 
-            // if ( count( $catys ) != 0 ) :
+            
         
             foreach( $catys as $caty ): 
 

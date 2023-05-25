@@ -1,8 +1,8 @@
 <?php
-$dbName="nfsfu-ecomm-z2hdlxELi7okqNrvDKcM_2023-05-22__17:11:38";
-$dbAdminName="Shifu-Nfor Nyuiring-yoh";
-$dbAdminEmail="admin@domain.com";
-$dbAdminUsername="super-admin";
+$dbName="nfsfu234-LbjEnlFTMS2BcxQ3IsPJ_2023-05-25__23:36:37";
+$dbAdminName="Shifu-Nfor";
+$dbAdminEmail="nforshifu234@gmail.com";
+$dbAdminUsername="nforshifu_234";
 define( "DB_NAME", " $dbName");
 define( "DB_ADMIN_NAME", " $dbAdminName");
 define( "DB_ADMIN_USERNAME", " $dbAdminUsername");

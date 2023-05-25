@@ -1,4 +1,4 @@
 <?php
-$currencyName="United States Dollar";
-$currencySymbol="$";
+$currencyName="Nigerian Naira";
+$currencySymbol="₦";
 define("CURRENCY_NAME", $currencyName);define("CURRENCY_SYMBOL", $currencySymbol);?>

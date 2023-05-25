@@ -1,14 +1,12 @@
 <?php include_once "assets/php/app.php" ?>
 
 <?php
-if ( chechkSiteVisibilityStatus($dbConn) === 1 ){
 
-} else
-if ( chechkSiteVisibilityStatus($dbConn) != 3 )
+
+if ( chechkSiteVisibilityStatus($dbConn) !=  3)
 {
     header("location: index.php");
 }
-
 
 ?>
 

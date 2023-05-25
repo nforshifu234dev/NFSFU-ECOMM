@@ -54,13 +54,6 @@
                 
                     foreach( $siteDetails as $key => $siteDetail ):
 
-                    //    foreach ( $siteDetail as $detail ):
-
-                        // echo "<pre>";
-                        // echo "</pre>";
-                        // var_dump($siteDetails);
-                        // var_dump($siteDetail["site_details_detail_info"]);
-
                 ?>
 
                     <tr >
@@ -82,7 +75,7 @@
                         <?php endif; ?>
                     </tr>
 
-                <?php //endforeach; ?>
+                <?php ?>
                 <?php endforeach; ?>
                             
 

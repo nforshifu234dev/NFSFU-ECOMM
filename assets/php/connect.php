@@ -21,7 +21,6 @@
     } 
     catch (Exception $e) {
         echo '<center><h1>Couldn\'t Establish A Database Connection. Due to the following reason: ' . $e->getMessage() . '. Kindly wait for redirection.</h1></center>';
-        // header("refresh:3;url:welcome.php");
         file_put_contents("status.file", "");
         header( "refresh:5;url=welcome.php" );
         exit;

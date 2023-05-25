@@ -9,7 +9,7 @@
 
 ![Header](assets/origin/preview/NFSFU-ECOMM_dashboard.png)
 
-## <h1 align="center" style="padding-top:1em;padding-bottom:1em;" >WELCOME TO <b>NFSH-ECOMM v1.0.0-alpha</b>  by <a href="https://www.instagram.com/nforshifu234dev/" style="color:lightblue;" >NFORSHIFU234 Dev CODES</a>
+## <h1 align="center" style="padding-top:1em;padding-bottom:1em;" >WELCOME TO <b>NFSH-ECOMM v1.0.0-alpha</b>  by <a target="_blank" href="https://www.instagram.com/nforshifu234dev/" style="color:lightblue;" >NFORSHIFU234 Dev CODES</a>
 </h1>
 
 <span id="top"></span>
@@ -220,19 +220,19 @@ Follow The Installaton Process and provide the neccessary information asked.
 </li>
 
 <li>
-After the installation is successful, you will be redirected to the dashboard page. 
+After the installation is successful, you will be redirected to the coming soon page. 
 </li>
 
 <li>
-Once you are in the dashboard page, you can read steps on how to go about the application. To do this this is the first option with the title "Installation Guide" of your dashboard page.
+Click on the dashboard button at the top menu. Once you are in the dashboard page, you can read steps on how to go about the application. To do this this is the first option with the title "Installation Guide" of your dashboard page.
 </li>
 
 <li>
-By default, the visibility status of the site is set to the "COMING SOON" status. To change that see "<a href="#partII">Part II</a>"
+By default, the visibility status of the site is set to the "COMING SOON" status. To change that see "<a target="_blank" href="#partII">Part II</a>"
 </li>
 
 <li>
- If you wish to add products see "<a href="#partIII">Part III</a>" for more information, if you wish to add categories, see "<a hre="#partIV">PART IV</a>", if you wish to add users, see "<a href="#partV">PART V</a>"
+ If you wish to add products see "<a target="_blank" href="#partIII">Part III</a>" for more information, if you wish to add categories, see "<a hre="#partIV">PART IV</a>", if you wish to add users, see "<a target="_blank" href="#partV">PART V</a>"
 </li>
 
 <!-- <li>
@@ -797,23 +797,23 @@ To to edit the pages above, you can just replace evverything in that file with a
 
 <hr>
 
-## <h1 align="center" style="padding-top:1em;padding-bottom:1em;" ><b>NFSH-ECOMM v1.0.0-alpha</b>  by <a href="https://www.instagram.com/nforshifu234dev/" style="color:lightblue;" >NFORSHIFU234 Dev CODES</a>
+## <h1 align="center" style="padding-top:1em;padding-bottom:1em;" ><b>NFSH-ECOMM v1.0.0-alpha</b>  by <a target="_blank" href="https://www.instagram.com/nforshifu234dev/" style="color:lightblue;" >NFORSHIFU234 Dev CODES</a>
 </h1>
 
 <div align="center" > 
 	
-<a href="#top">~ Back To Top ~</a>
+<a target="_blank" href="#top">~ Back To Top ~</a>
 <br>
-<a href="#features">~ Features ~</a>
+<a target="_blank" href="#features">~ Features ~</a>
 <br>
-<a href="#partIII">~ How To Add Products  ~</a>
+<a target="_blank" href="#partIII">~ How To Add Products  ~</a>
 <br>
 
 </div>
 
 <hr>
 
-## <h1 align="center" style="padding-top:1em;padding-bottom:1em;" >THANK YOU FOR USING <a href="https://www.instagram.com/nforshifu234.dev/" style="color:lightblue;" >NFORSHIFU234 Dev CODES</a>
+## <h1 align="center" style="padding-top:1em;padding-bottom:1em;" >THANK YOU FOR USING <a target="_blank" href="https://www.instagram.com/nforshifu234dev/" style="color:lightblue;" >NFORSHIFU234 Dev CODES</a>
 </h1>
 
 
@@ -824,16 +824,16 @@ To to edit the pages above, you can just replace evverything in that file with a
 
 
 <li>
-	<h2 style="display:inline-block;" >Twitter:</h2> <a href="https://www.twitter.com/nforshifu234dev/" style="color:lightblue;" >@NFORSHIFU234DEV</a>
+	<h2 style="display:inline-block;" >Twitter:</h2> <a target="_blank" href="https://www.twitter.com/nforshifu234dev/" style="color:lightblue;" >@NFORSHIFU234DEV</a>
 </li>
 
 <li>
-	<h2 style="display:inline-block;" >Instagram:</h2> <a href="https://www.instagram.com/nforshifu234dev/" style="color:lightblue;" >@NFORSHIFU234_DEV</a>
+	<h2 style="display:inline-block;" >Instagram:</h2> <a target="_blank" href="https://www.instagram.com/nforshifu234dev/" style="color:lightblue;" >@NFORSHIFU234DEV</a>
 </li>
 
 
 <li>
-	<h2 style="display:inline-block;" >E-Mail:</h2> <a href="mailto:nforshifu234.dev@gmail.com" style="color:lightblue;" >@NFORSHIFU234.dev@gmai.com</a>
+	<h2 style="display:inline-block;" >E-Mail:</h2> <a target="_blank" href="mailto:nforshifu234.dev@gmail.com" style="color:lightblue;" >@NFORSHIFU234.dev@gmai.com</a>
 </li>
 
 

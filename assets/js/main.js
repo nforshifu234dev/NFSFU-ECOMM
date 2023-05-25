@@ -13,7 +13,6 @@ window.addEventListener('load', ()=>
 
     }
 
-    // var subImgCntir = document.querySelector(".sub-images");
     let subImgCntir = document.querySelectorAll(".item");
 
     subImgCntir.forEach( (item)=>
