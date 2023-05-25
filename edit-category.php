@@ -45,7 +45,6 @@ if( $_SERVER["REQUEST_METHOD"] === "GET" )
     }
     else
     {
-        //echo "HJIN";
             load404Page();
             exit;
     }
@@ -82,7 +81,6 @@ if( $_SERVER["REQUEST_METHOD"] === "POST" )
 
     if ( !hash_equals( $category_name, $u_category_name ) )
     {
-        // echo "PRODUCT NAME IS NOT THE SAME <br>";
         $a_category_slug = strtolower($u_category_name);
         $a_category_slug = preg_replace("/\s+/", "-", $a_category_slug);
 
@@ -91,9 +89,6 @@ if( $_SERVER["REQUEST_METHOD"] === "POST" )
 
             $productsWithCategoryName = getAllProductsWithCategoryName($dbConn, $category_name);
 
-            // echo "<pre>";
-            // var_dump($productsWithCategoryName);
-            // echo "</pre>";
 
             foreach( $productsWithCategoryName as $productCategoryName )
             {
@@ -110,7 +105,6 @@ if( $_SERVER["REQUEST_METHOD"] === "POST" )
         }
         else
         {
-            //echo "T";
             array_push( $responseArray, true );
             array_push( $responseArray, false );
 
@@ -124,7 +118,6 @@ if( $_SERVER["REQUEST_METHOD"] === "POST" )
     }
 
 
-    var_dump($responseArray);
 
     if ( count( array_unique( $responseArray ) ) != 1 )
     {

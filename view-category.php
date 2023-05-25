@@ -21,7 +21,6 @@ if ( $userDetails['user_role'] != 'super-admin' && $userDetails['user_role'] != 
 
 if( $_SERVER["REQUEST_METHOD"] === "GET" )
 {
-    // echo $_SESSION["SSID"];
    $categories = getAllCategories($dbConn, 0);
 
    if ( isset( $_GET["offset"] ) && isset( $_GET["SSID"] ) && !empty( $_GET["offset"] ) && !empty( $_GET["SSID"] ) )
@@ -35,9 +34,6 @@ if( $_SERVER["REQUEST_METHOD"] === "GET" )
         $offset = intval( $_GET["offset"] );
         $categories = getAllCategories($dbConn, $offset);
 
-        // echo "<pre>";
-        // var_dump($categories);
-        // echo "</pre>";
 
         $result = array(
             "status" => 200,
@@ -49,9 +45,6 @@ if( $_SERVER["REQUEST_METHOD"] === "GET" )
 
    }
 
-//    echo "<pre>";
-//    var_dump($products);
-//    echo "</pre>";
 
 }
 
@@ -64,13 +57,11 @@ if( $_SERVER["REQUEST_METHOD"] === "POST" )
     }
 
     $deleteId = $_POST["delete-id"];
-    // echo $deleteId;
 
     $checkIfRecordExist = chechkIfValueExist($dbConn, 'table_categories', "category_slug", $deleteId);
 
     if ( $checkIfRecordExist != 1 )
     {
-        //echo "Product Not FOund";
         exit;
     }
 
@@ -126,7 +117,6 @@ if( $_SERVER["REQUEST_METHOD"] === "POST" )
             {
 
                 const url = "<?php echo htmlspecialchars($_SERVER['PHP_SELF']) ?>?offset=" + numberOfrecords + "&SSID=<?php echo $_SESSION["SSID"] ?>";
-                // console.log(url);
 
                 let requestOptions = 
                 {
@@ -151,11 +141,9 @@ if( $_SERVER["REQUEST_METHOD"] === "POST" )
                     if ( status === 200 )
                     {
 
-                        // console.log(data.response);
 
                         let datas = data.response;
 
-                        // if ( datas.length === 0 || data === undefined )
                         if ( datas.length === 0 )
                         {
                             document.querySelector(".loadMoreButton").innerHTML = "<h1>You Have Reached the end of all categories in the Database</h1>";

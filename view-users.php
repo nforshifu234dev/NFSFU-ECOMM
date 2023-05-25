@@ -7,9 +7,6 @@ if ( !chechkIfLoggedIn() )
 }
 $userDetails = getUserDetailsUsingUsername($dbConn, $_SESSION["SSID-USERNAME"] );
 
-// echo $_SESSION["SSID-USERNAME"];
-
-// var_dump($userDetails);
 
 if ( $userDetails['user_role'] != 'super-admin' && $userDetails['user_role'] != 'admin'  )
 {
@@ -28,10 +25,6 @@ if( $_SERVER["REQUEST_METHOD"] === "GET" )
     
    $products = getAllUsers($dbConn, 0);
 
-//    echo "<pre>";
-//    var_dump($products);
-//    echo "</pre>";
-
    if ( isset( $_GET["offset"] ) && isset( $_GET["SSID"] ) && !empty( $_GET["offset"] ) && !empty( $_GET["SSID"] ) )
    {
         if ( !hash_equals( $_SESSION["SSID"],  $_GET["SSID"] )  )
@@ -42,10 +35,6 @@ if( $_SERVER["REQUEST_METHOD"] === "GET" )
 
         $offset = intval( $_GET["offset"] );
         $categories = getAllUsers($dbConn, $offset);
-
-        // echo "<pre>";
-        // var_dump($categories);
-        // echo "</pre>";
 
         $result = array(
             "status" => 200,
@@ -74,10 +63,8 @@ if( $_SERVER["REQUEST_METHOD"] === "POST" )
 
     if ( $checkIfRecordExist != 1 )
     {
-        //echo "Product Not FOund";
         $dir = '../NFSFU-ECOMM/product-not-found.php'; 
         loadPage($dir);
-        // exit;
         exit;
     }
 
@@ -110,7 +97,6 @@ if( $_SERVER["REQUEST_METHOD"] === "POST" )
     
 
 
-    // echo "SUCCESS";
 
 }
 
@@ -159,7 +145,6 @@ else
     {
 
         const url = "<?php echo htmlspecialchars($_SERVER['PHP_SELF']) ?>?offset=" + numberOfrecords + "&SSID=<?php echo $_SESSION["SSID"] ?>";
-        // console.log(url);
 
         let requestOptions = 
         {
@@ -188,7 +173,6 @@ else
 
                 let datas = data.response;
 
-                // if ( datas.length === 0 || data === undefined )
                 if ( datas.length === 0 )
                 {
                     document.querySelector(".loadMoreButton").innerHTML = "<h1>You Have Reached the end of all categories in the Database</h1>";

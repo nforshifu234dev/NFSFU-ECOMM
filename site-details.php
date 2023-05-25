@@ -15,9 +15,6 @@ if ( $userDetails['user_role'] != 'super-admin'  )
 
 $siteDetails = getAllSiteInformation($dbConn);
 
-// echo "<pre>";
-// var_dump($siteDetails);
-// echo "</pre>";
 
 ?>
 

@@ -44,13 +44,6 @@
 
                     <div class="guide" id="guide">
 
-                    <?php 
-
-                        // $c = file_get_contents("ReadMe.md");
-                        // echo $c;
-
-                    ?>
-
                     </div>
 
 

@@ -4,29 +4,15 @@
 include_once __DIR__ . "/assets/php/app.php";
 
 
-// include_once "../bolu-site/assets/php/app.php" ;
 
-// echo $categories;
-    // require_once __DIR__ . "/assets/php/connect.php";
-    // require_once __DIR__ . "/assets/php/functions/functions.php";
     
-    // $dbConn = $connectionHandler;
 
 
-    // $site_titile = getSiteName($dbConn)[0];
 
 
-// if ( chechkIfLoggedIn() )
-// {
-//     $userDetails = getUserDetailsUsingUsername($dbConn, $_SESSION["SSID-USERNAME"] );
-// }
 
-// chechkSiteVisibilityStatusAndRedirect($dbConn);
 
-// $site_titile = getSiteName($dbConn)[0];
 
-// $total_number_of_products = count(getAllProducts($dbConn));
-// $total_number_of_categories = count(getAllCategories($dbConn));
 if ( !empty( $_GET["product-slug"] ) )
 {
 

@@ -1,7 +1,6 @@
 <?php
 
 include_once __DIR__ . "/assets/php/app.php" ;
-// include_once __DIR__ . "/assets/php/connect.php";
 
 if ( chechkSiteVisibilityStatus($dbConn) != 2 )
 {

@@ -127,11 +127,8 @@
 
             if ( $f != 0 )
             {
-                // $_SESSION["error_message"] = "FALSE";
-                // echo "FALSE";
                 $_SESSION["welcome_error_msg"] = "An error occured";
                 $_SESSION["welcome_error_bg"] = "bg-failure";
-                // exit;
             }
 
 
@@ -168,16 +165,6 @@
                                 $filePath = $upload_dir.time().$file_name;
         
                                  move_uploaded_file( $file_tmp_name, $filePath );
-
-                                // if ( )
-                                // {
-                                //     // echo "{$file_name} successfuly uploaded";
-                                //     $productImagesUrls.= "assets/products/$product_id/media/images/" . $file_name . ",";
-                                // }
-                                // else
-                                // {
-                                //     echo "ERROR";
-                                // }
         
                             }
                             else
@@ -185,15 +172,12 @@
         
                                 if ( move_uploaded_file( $file_tmp_name, $filePath ) )
                                 {
-                                    // echo "{$file_name} successfuly uploaded";
                                     $_SESSION["error_msg"] = "Upload Success";
                                     $_SESSION["error_bg"] = "bg-success";
-                                    // $productImagesUrls.= "assets/products/$product_id/media/images/" . $file_name . ",";
                                     
                                 }
                                 else
                                 {
-                                    // echo "ERROR";
                                     $_SESSION["error_msg"] = "Error While  Uploading";
                                     $_SESSION["error_bg"] = "bg-failure";
                                 }
@@ -205,28 +189,14 @@
                     }
                     else
                     {
-                        // echo "Error Uploading: ";
-                        // echo "({$file_ext} file is not allowed)";
                         $_SESSION["error_msg"] = "{$file_ext} file is not allowed <br>";
                         $_SESSION["error_bg"] = "bg-failure";
                     }
 
                 }
 
-            // }
-            // else
-            // {
-                
-            //     $_SESSION["error_msg"] = "No FIles Selected";
-            //     $_SESSION["error_bg"] = "bg-failure";
-            // }
-
             $db_admin_password = password_hash($db_admin_confirm_password, PASSWORD_DEFAULT );
 
-            // if ( password_verfiy(  password, hash-password  ) )
-            // {
-            //     verfied
-            // }
 
 
             //INSERTING DATA INTO SITE_DETAILS Table
@@ -238,17 +208,14 @@
                 3 => array( "SITE_LOGO", $logoUrl ),
                 4 => array( "SITE_CREATION_DATE", date( 'Y-m-d H:i:s') ),
                 5 => array( "SITE_LAST_UPDATED_DATE", date( 'Y-m-d H:i:s') ),
-                // SITE_BASE_URL
             );
 
             $q = "INSERT INTO `table_site_details` (`site_details_detail_info`, `site_details_detail_info_value`) VALUES (:title, :answer) ";
 
             if ( insertIntoDBwhereColumnIsTwo( $dbConn, $q, $siteInformationTableTableItems ) != true )
             {
-                // echo "\n FALSE \n";
                 $_SESSION["welcome_error_msg"] = "an error occured";
                 $_SESSION["welcome_error_bg"] = "bg-failure";
-                // array_push( $final_results_array, false );
             }
             else
             {
@@ -298,8 +265,6 @@
 
                 if ( !$stmt->execute() )
                 {
-                    // echo "\n FALSE \n";
-                    // $_SESSION["welcome_error_msg"] = "FALSE";
                     $_SESSION["welcome_error_msg"] = "an error occured";
                     $_SESSION["welcome_error_bg"] = "bg-failure";
         
@@ -377,7 +342,6 @@
                         $_SESSION["SSID"] = generateRadmonStrings("ssid-");
                         $_SESSION["SSID-USERNAME"] = $db_admin_username;
 
-                        // header( "refresh:5;url=index.html" );
                         header( "Location: installation.php?respCode=200&creation-process=SUCCESS&message=WELCOME-TO-" .$brand_name );
 
                     }

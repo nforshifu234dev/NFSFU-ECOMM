@@ -72,7 +72,6 @@ if( is_null( $userDetails ) )
 
                         <a href="profile-edit.php" class="btn btn-success" > <i class="fas fa-pencil"></i> Edit Profile</a>
 
-                        <!-- <hr> -->
                     </div>
                 
                     <div class="add-new-product-form ">

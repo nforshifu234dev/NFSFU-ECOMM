@@ -11,16 +11,11 @@ if ( chechkIfLoggedIn() )
     $userDetails = getUserDetailsUsingUsername($dbConn, $_SESSION["SSID-USERNAME"] );
 }
 
-// echo $_SERVER['REQUEST_METHOD'];
 
 if ( $_SERVER['REQUEST_METHOD'] === "POST" )
 {
 
-    // echo "POST";
-    // var_dump($_POST);
 
-    // if ( isset( $_POST['feedbackSend'] ) )
-    // {
 
         $from = $_POST['u_mail'];
         $name = $_POST['u_name'];
@@ -47,18 +42,14 @@ if ( $_SERVER['REQUEST_METHOD'] === "POST" )
         {
             $_SESSION['e_message'] = "Your Feedback Was Sent Successfully";
             $_SESSION['e_code'] = 200;
-            // echo "SENT";
         }
         else
         {
             $_SESSION['e_message'] = "Your Feedback Was NOT Sent Successfully";
             $_SESSION['e_code'] = 402;
-            // echo "NOT SENT";
         }
 
-        // htmlspecialchars( $_SERVER["PHP_SELF"] );
 
-    // }
 
 }
 
@@ -262,7 +253,6 @@ if ( $_SERVER['REQUEST_METHOD'] === "POST" )
 
 <?php
 
-        // unset($_SESSION['e_message']);
         unset($_SESSION['e_code']);
 
 ?>

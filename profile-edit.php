@@ -12,7 +12,6 @@ if ( !chechkIfLoggedIn() )
 if ( isset( $_GET["user-id"] ) )
 {
     $userDetails = getUserDetailsUsingUsername($dbConn, $_GET["user-id"] );
-    // $_SESSION["user-id"] = $_GET["user-id"];
 
     $_SESSION["updateId"] = $_GET["user-id"] ;
 
@@ -24,18 +23,11 @@ else
     $userDetails = getUserDetailsUsingUsername($dbConn, $_SESSION["SSID-USERNAME"] );
     $profileName = "My";
 
-    // if ( $userDetails['user_role'] != 'super-admin' || $userDetails['user_role'] != 'admin'  )
-    // {
-    //     load404Page();
-    //     exit;
-    // }
 
 }
 
 
 
-// echo $_GET["user-id"];
-// var_dump( $userDetails );
 
 if ( $userDetails === false )
 {
@@ -48,7 +40,6 @@ if ( $userDetails === false )
 
 <?php 
 
-// if ( $_SERVER )
 
 if( $_SERVER["REQUEST_METHOD"] === "POST" )
 {
@@ -64,13 +55,10 @@ if( $_SERVER["REQUEST_METHOD"] === "POST" )
         $off = $_SESSION["SSID-USERNAME"] ;
     }
 
-    // echo $off;
 
     $userDetails = getUserDetailsUsingUsername($dbConn, $off );
 
-    // var_dump($userDetails);
 
-    // exit;
     
     $a_user_id = $userDetails["user_id"];
     $a_user_name = $userDetails["user_name"];
@@ -79,9 +67,7 @@ if( $_SERVER["REQUEST_METHOD"] === "POST" )
     $a_user_email = $userDetails["user_email"];
     $a_user_role = $userDetails["user_role"];
     $a_user_name = $userDetails["user_number_of_orders"];
-    // $a_user_name = $userDetails["user_"];
 
-    // $u_user_id = $_POST["u_user_password"];
     $u_user_name = $_POST["u_user_name"];
     $u_user_username = $_POST["u_user_username"];
     $u_user_password = $_POST["u_user_pass"];
@@ -137,7 +123,6 @@ if( $_SERVER["REQUEST_METHOD"] === "POST" )
             array_push( $responseArray, true );
         }
 
-        // $_SESSION["SSID-USERNAME"] = $u_user_username;6
 
     }
 
@@ -262,7 +247,6 @@ if( $_SERVER["REQUEST_METHOD"] === "POST" )
                 {
                     $_SESSION["error-msg"] = "EMPTY FEILDS";
                     $_SESSION["error-bg"] = "bg-failure";
-                    // $_SESSION["SSID-USERNAME"]= 
                                 array_push( $responseArray, true );
                     array_push( $responseArray, false );
                 }
@@ -285,19 +269,9 @@ if( $_SERVER["REQUEST_METHOD"] === "POST" )
 
  
 
-    // if ( isset( $_SESSION["user-id"] ) )
-    // {
-    //     header("Location:" . htmlspecialchars($_SERVER['PHP_SELF']) . "?user-id" . $_SESSION["user-id"] );
-    // }
-    // else
-    // {
-    //     header("Location:" . htmlspecialchars($_SERVER['PHP_SELF']) );
         
-    // }
     header("Location: view-users.php");
 
-    // unset($_SESSION["error_msg"]);
-    // unset($_SESSION["error_bg"]);
 
 
 }
@@ -364,7 +338,6 @@ if( $_SERVER["REQUEST_METHOD"] === "POST" )
 
                                 <button type="submit" class="btn btn-primary" name="updateUser" > <i class="fas fa-upload"></i> Update Profile</button>
 
-                                <!-- <hr> -->
                             </div>
                         
 

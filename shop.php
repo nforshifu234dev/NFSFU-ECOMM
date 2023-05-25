@@ -160,7 +160,6 @@ else
 
                                 productImageContainer.appendChild(productCardOverlayContainer);
 
-                                    // productImageContainer.appendChild();
                                                                             
                                 const productName = document.createElement("a");
                                         productName.setAttribute("href", "product-details-page.php?product-id=" + data.product_id );
@@ -210,9 +209,7 @@ else
                         productCard.append(productCategory);                  
                         productCard.append(productPriceContainer);                  
                         productCard.append(addToCartButtonCont);                  
-                        // productCard.append();                  
 
-                        // console.log(productCard);
 
                         numberOfrecords += 1;
 

@@ -1,7 +1,5 @@
 <?php 
 include_once __DIR__ . "/assets/php/app.php" ;
-    // require_once __DIR__ . "/assets/php/connect.php";
-    // require_once __DIR__ . "/assets/php/functions/functions.php";
     
     $dbConn = $connectionHandler;
 
@@ -11,14 +9,12 @@ include_once __DIR__ . "/assets/php/app.php" ;
 ?>
 
 <?php 
-// unset($_SESSION["returnUrl"]);
 
 
 $userDetails = getUserDetailsUsingUsername($dbConn, $username);
 
 if ( chechkIfLoggedIn() )
 {
-    // echo "T";
      header("location: dashboard.php");
  exit;
 }
@@ -43,9 +39,7 @@ if( $_SERVER["REQUEST_METHOD"] === "POST" )
     {
 
 
-        // $chechkIfUserExist = chechkIfValueExist($dbConn, "table_users", "user_username", $username);
 
-        // if ( $chechkIfUserExist != 1 )
 
         if ( getUserDetailsUsingUsername($dbConn, $username) === false )
         {
@@ -65,12 +59,10 @@ if( $_SERVER["REQUEST_METHOD"] === "POST" )
 
             if ( !password_verify( $password , $userDetails["user_password"]  ) )
             {
-                // echo "PASSWORD IS NOT CORRECT";
                 $_SESSION["error_bg"] = "bg-failure";
                 $_SESSION["error_msg"] = "PASSWORD IS NOT CORRECT";
                 $_GET["error_unmae"] =     $username;
                 header("Location:" . htmlspecialchars($_SERVER['PHP_SELF']) . "?password" );
-                // exit;
             }
             else
             {
@@ -111,7 +103,6 @@ if( $_SERVER["REQUEST_METHOD"] === "POST" )
     }
     else
     {
-        // echo "EMPTY INPUTS";
         $_SESSION["error_bg"] = "bg-failure";
         $_SESSION["error_msg"] = "EMPTY FEILDS";
         header("Location:" . htmlspecialchars($_SERVER['PHP_SELF']) );
@@ -213,22 +204,13 @@ if ( isset( $_GET["returnUrl"] ) )
 
     <script>
         
-        // function closeElment( PageHTMLElement )
-        // {
 
 
-            // const allCloseIcons = document.querySelectorAll(".ui-close").forEach( (item)=>{
 
-            //     item.addEventListener( "click", ()=>
-            //     {
 
-            //         PageHTMLElement.classList.add("display-none");
 
-            //     } );
 
-            // } );
 
-        // }
 
         
         const allCloseIcons = document.querySelectorAll(".ui-close").forEach( (item)=>{
@@ -268,7 +250,6 @@ if ( isset( $_GET["returnUrl"] ) )
 
         }, 2000 );
 
-        // closeElment( document.querySelector(".error-container") );
 
     </script>
 

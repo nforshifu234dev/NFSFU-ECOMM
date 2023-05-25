@@ -60,7 +60,6 @@ if( $_SERVER["REQUEST_METHOD"] === "POST" )
 
     if ( $checkIfRecordExist != 1 )
     {
-        //echo "Product Not FOund";
         exit;
     }
 
@@ -71,10 +70,7 @@ if( $_SERVER["REQUEST_METHOD"] === "POST" )
 
     if ( is_dir( $product_dir ) )
     {
-        // $it = new RecursiveDirectoryIterator($product_dir, RecursiveDirectoryIterator::SKIP_DOTS);
-        // $files = new RecursiveIteratorIterator($it,
-        //     RecursiveIteratorIterator::CHILD_FIRST
-        // );
+
 
         $files = scandir($product_dir);
 
@@ -106,7 +102,6 @@ if( $_SERVER["REQUEST_METHOD"] === "POST" )
     }
 
 
-    // echo "SUCCESS";
 
 }
 
@@ -155,7 +150,6 @@ else
     {
 
         const url = "<?php echo htmlspecialchars($_SERVER['PHP_SELF']) ?>?offset=" + numberOfrecords + "&SSID=<?php echo $_SESSION["SSID"] ?>";
-        // console.log(url);
 
         let requestOptions = 
         {
@@ -184,7 +178,6 @@ else
 
                 let datas = data.response;
 
-                // if ( datas.length === 0 || data === undefined )
                 if ( datas.length === 0 )
                 {
                     document.querySelector(".loadMoreButton").innerHTML = "<h1>You Have Reached the end of all categories in the Database</h1>";
@@ -233,7 +226,6 @@ else
                                     const table_categroy_image_tag = document.createElement("img");
                                                 table_categroy_image_tag.setAttribute("src", data.product_hero_img ) 
                                                 table_categroy_image_tag.setAttribute("class", "product-preview" ) 
-                                                // table_categroy_image_tag.innerHTML = "product-details.php?product-id=" + data.product_id;
 
                             table_categroy_image.appendChild( table_categroy_image_tag );
 

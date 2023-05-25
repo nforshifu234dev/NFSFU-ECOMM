@@ -24,8 +24,6 @@ if ( chechkSiteVisibilityStatus($dbConn) != 3 )
             top: 0;
             left: 0;
             width: 100%;
-            /* height: 20%; */
-            /* border: red solid 2px; */
         }
 
         .top svg
@@ -39,8 +37,6 @@ if ( chechkSiteVisibilityStatus($dbConn) != 3 )
             bottom: 0;
             left: 0;
             width: 100%;
-            /* height: 20%; */
-            /* border: red solid 2px; */
         }
 
         .bottom svg

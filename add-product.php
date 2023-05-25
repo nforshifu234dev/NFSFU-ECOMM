@@ -45,7 +45,6 @@ if( $_SERVER["REQUEST_METHOD"] === "POST" )
 
     if ( !is_dir($upload_dir) )
     {
-        // echo "DOES NOT EXIST";
         mkdir( $upload_dir );
         mkdir( $upload_dir . "/media" );
         mkdir( $upload_dir . "/media/images" );
@@ -85,7 +84,6 @@ if( $_SERVER["REQUEST_METHOD"] === "POST" )
 
                         if ( move_uploaded_file( $file_tmp_name, $filePath ) )
                         {
-                            // echo "{$file_name} successfuly uploaded";
                             $productImagesUrls.= "assets/products/$product_id/media/images/" . $file_name . ",";
                         }
                         else
@@ -99,7 +97,6 @@ if( $_SERVER["REQUEST_METHOD"] === "POST" )
 
                         if ( move_uploaded_file( $file_tmp_name, $filePath ) )
                         {
-                            // echo "{$file_name} successfuly uploaded";
                             $_SESSION["error_msg"] = "Upload Success";
                             $_SESSION["error_bg"] = "bg-success";
                             $productImagesUrls.= "assets/products/$product_id/media/images/" . $file_name . ",";
@@ -107,7 +104,6 @@ if( $_SERVER["REQUEST_METHOD"] === "POST" )
                         }
                         else
                         {
-                            // echo "ERROR";
                             $_SESSION["error_msg"] = "Error While  Uploading";
                             $_SESSION["error_bg"] = "bg-failure";
                         }
@@ -138,12 +134,6 @@ if( $_SERVER["REQUEST_METHOD"] === "POST" )
         $_SESSION["error_bg"] = "bg-failure";
     }
 
-    // echo "<br>";
-    // echo "<br>";
-    // echo "<br>";
-
-    // echo $productImagesUrls;
-
     $product_details = array (
 
         "product_name" => $product_name,
@@ -156,9 +146,6 @@ if( $_SERVER["REQUEST_METHOD"] === "POST" )
         "product_long_description" => $product_long_description,
 
     );
-
-    // echo "<br>";
-        // echo "<br>";
 
     if ( createNewProduct( $dbConn, $product_details ) )
     {

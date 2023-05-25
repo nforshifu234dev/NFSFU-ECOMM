@@ -27,24 +27,11 @@ if( $_SERVER["REQUEST_METHOD"] === "GET" )
         $query = $_GET["q"];
         $searchTerm = $query;
 
-        // echo "$query <br>";
 
         
 
-        // $count = count( $products );
 
-        // if ( $count === 0 )
-        // {
-        //     $products = NULL;
-        // }
-        // else
-        // {
-        //     $products= searchProduct($dbConn, $query );
-        // }
 
-        // echo "<pre>";
-        // var_dump($products);
-        // echo "</pre>";
        
 
     }

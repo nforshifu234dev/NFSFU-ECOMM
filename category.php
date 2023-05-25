@@ -36,14 +36,12 @@
 
         if ( $count === 0 )
         {
-            // echo "HI";
-            // $msg = "HI";
+
             $dir = '../NFSFU-ECOMM/product-not-found.php'; 
             loadPage($dir);
             exit;
         }
 
-        // var_dump($prdoucts);
 
     }
     else

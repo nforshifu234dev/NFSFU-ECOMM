@@ -6,16 +6,16 @@
     
     chechkNumberOfProductsANdCategoriesAndDisplayMessage( $dbConn );
 
-if ( chechkIfLoggedIn() )
-{
-    $userDetails = getUserDetailsUsingUsername($dbConn, $_SESSION["SSID-USERNAME"] );
-}
+    if ( chechkIfLoggedIn() )
+    {
+        $userDetails = getUserDetailsUsingUsername($dbConn, $_SESSION["SSID-USERNAME"] );
+    }
 
 
-$total_number_of_products = count(getAllProducts($dbConn));
-$total_number_of_categories = count(getAllCategories($dbConn));
+    $total_number_of_products = count(getAllProducts($dbConn));
+    $total_number_of_categories = count(getAllCategories($dbConn));
 
-chechkSiteVisibilityStatusAndRedirect($dbConn);
+    chechkSiteVisibilityStatusAndRedirect($dbConn);
 
 ?>
 

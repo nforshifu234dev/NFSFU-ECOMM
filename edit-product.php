@@ -31,7 +31,6 @@ if( $_SERVER["REQUEST_METHOD"] === "GET" )
 
         if ( $checkIfRecordExist != 1 )
         {
-            //echo "Product Not FOund";
             $dir = '../bolu-site/product-not-found.php'; 
             loadPage($dir);
             exit;
@@ -44,7 +43,6 @@ if( $_SERVER["REQUEST_METHOD"] === "GET" )
         $product_category = $product["product_category"];
         $product_visibility = $product["product_visibility"];
         $product_short_description = $product["short_description"];
-        // $product_short_description = $product["short_description"];
         $product_current_price = $product["product_curr_price"];
         $product_previous_price = $product["product_prev_price"];
         $product_long_description = $product["long_description"];
@@ -53,7 +51,6 @@ if( $_SERVER["REQUEST_METHOD"] === "GET" )
     }
     else
     {
-        //echo "HJIN";
         load404Page();
             exit;
     }
@@ -73,7 +70,6 @@ if( $_SERVER["REQUEST_METHOD"] === "POST" )
 
     if ( $checkIfRecordExist != 1 )
     {
-        //echo "Product Not FOund";
         load404Page();exit;
     }
 
@@ -101,12 +97,10 @@ if( $_SERVER["REQUEST_METHOD"] === "POST" )
 
     if ( !hash_equals( $product_name, $u_product_name ) )
     {
-        // //echo "PRODUCT NAME IS NOT THE SAME <br>";
         $product_slug = strtolower($u_product_name);
         $product_slug = preg_replace("/\s+/", "-", $product_slug);
 
 
-        // echo $product_slug;
 
         if ( updateProductDetailInDB($dbConn, "table_products", "product_name", $product_id, $u_product_name ) === true && updateProductDetailInDB($dbConn, "table_products", "product_slug", $product_id, $product_slug ) === true )
         {
@@ -114,7 +108,6 @@ if( $_SERVER["REQUEST_METHOD"] === "POST" )
         }
         else
         {
-            //echo "T";
             array_push( $responseArray, true );
             array_push( $responseArray, false );
 
@@ -128,12 +121,10 @@ if( $_SERVER["REQUEST_METHOD"] === "POST" )
 
     if ( !hash_equals( $product_current_price, $u_product_price ) )
     {
-        // //echo "PRODUCT NAME IS NOT THE SAME <br>";
         $product_slug = trim($u_product_price);
         $product_slug = floatval($u_product_price );
         
 
-        // $product_slug = preg_replace("/\s+/", "-", $product_slug);
 
         if ( 
             updateProductDetailInDB($dbConn, "table_products", "product_prev_price", $product_id, $product_current_price ) === true 
@@ -144,7 +135,6 @@ if( $_SERVER["REQUEST_METHOD"] === "POST" )
         }
         else
         {
-            //echo "T";
             array_push( $responseArray, true );
             array_push( $responseArray, false );
 
@@ -158,7 +148,6 @@ if( $_SERVER["REQUEST_METHOD"] === "POST" )
 
     if ( !hash_equals( $product_category, $u_product_category ) )
     {
-        // //echo "CATEGORY IS NOT THE SAME <br>";
         if ( updateProductDetailInDB($dbConn, "table_products", "product_category", $product_id, $u_product_category ) )
         {
             array_push( $responseArray, true );
@@ -167,7 +156,6 @@ if( $_SERVER["REQUEST_METHOD"] === "POST" )
         {
             array_push( $responseArray, true );
             array_push( $responseArray, false );
-            //echo "h";
 
         }
         
@@ -179,7 +167,6 @@ if( $_SERVER["REQUEST_METHOD"] === "POST" )
 
     if ( !hash_equals( $product_short_description, $u_product_short_description ) )
     {
-        // //echo "SHORT DESCRIPTION IS NOT THE SAME <br>";
         if ( updateProductDetailInDB($dbConn, "table_products", "short_description", $product_id, $u_product_short_description ) )
         {
             array_push( $responseArray, true );
@@ -188,7 +175,6 @@ if( $_SERVER["REQUEST_METHOD"] === "POST" )
         {
             array_push( $responseArray, true );
             array_push( $responseArray, false );
-            //echo "R";
 
         }
         
@@ -200,7 +186,6 @@ if( $_SERVER["REQUEST_METHOD"] === "POST" )
 
     if ( !hash_equals( $product_long_description, $u_product_long_description ) )
     {
-        // //echo "LONG DESCRIPTION IS NOT THE SAME <br>";
         if ( updateProductDetailInDB($dbConn, "table_products", "long_description", $product_id, $u_product_long_description ) )
         {
             array_push( $responseArray, true );
@@ -209,7 +194,6 @@ if( $_SERVER["REQUEST_METHOD"] === "POST" )
         {
             array_push( $responseArray, true );
             array_push( $responseArray, false );
-            //echo "e";
 
         }
     }
@@ -229,7 +213,6 @@ if( $_SERVER["REQUEST_METHOD"] === "POST" )
         {
             array_push( $responseArray, true );
             array_push( $responseArray, false );
-            //echo "e";
 
         }
 

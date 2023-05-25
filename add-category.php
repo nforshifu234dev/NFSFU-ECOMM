@@ -38,8 +38,6 @@ if( $_SERVER["REQUEST_METHOD"] === "POST" )
         
         $_SESSION["error_msg"] = "Registration Success";
         $_SESSION["error_bg"] = "bg-success";
-        // echo "SUccess";
-        // header("Location:" .htmlspecialchars($_SERVER['PHP_SELF']) );
         header("Location:" . htmlspecialchars($_SERVER['PHP_SELF']) .  "?respCode=200&msg=success");
     }
     else

@@ -1,9 +1,6 @@
 <?php
 include_once __DIR__ . "/assets/php/app.php";
-// include_once __DIR__ . "/assets/php/config.php";
-// include_once __DIR__ . "/assets/php/functions/functions.php";
 
-// echo $dbConn;
 
 
 if ( $_SERVER["REQUEST_URI"] != "/NFSFU-ECOMM/view-user.php" )

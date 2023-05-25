@@ -14,7 +14,6 @@ if ( $userDetails['user_role'] != 'super-admin'  )
 }
 
 $siteDetails = getAllSiteInformation($dbConn);
-// var_dump($siteDetails);
 
 ?>
 <?php 
@@ -35,7 +34,6 @@ if( $_SERVER["REQUEST_METHOD"] === "POST" )
         if (  isset (  $_POST["update". $siteDetail["site_details_detail_info"] ]  ))
         {
 
-            // echo $siteDetail["site_details_detail_info"] . " is POST";
 
             if ( hash_equals( "SITE_BASE_URL", $siteDetail["site_details_detail_info"] ) )
             {
@@ -54,7 +52,6 @@ if( $_SERVER["REQUEST_METHOD"] === "POST" )
                 {
                     updateSiteLastUpdatedTime( $dbConn, date( 'Y-m-d H:i:s') );
 
-                    // header("location:" . htmlspecialchars($_SERVER["PHP_SELF"]) . "?respCode=200&UPDATED-" . $siteDetail["site_details_detail_info"] . "-SUCCESS" );
                     header("location:site-details.php". "?respCode=200&UPDATED-" . $siteDetail["site_details_detail_info"] . "-SUCCESS" );
 
                 }
@@ -90,15 +87,11 @@ if( $_SERVER["REQUEST_METHOD"] === "POST" )
                     {
                         header("location:" . htmlspecialchars($_SERVER["PHP_SELF"]) . "?respCode=402&message=ERROR->COULD_NOT_WRITE_TO_FILE" );
                     }
-                    // echo $GLOBALS["brand_name"] . "<br>";
 
                     
 
-                    // echo $GLOBALS["brand_name"];
-                    // exit;
 
                     updateSiteLastUpdatedTime( $dbConn, date( 'Y-m-d H:i:s') );
-                    // header("location:" . htmlspecialchars($_SERVER["PHP_SELF"]) . "?respCode=200&UPDATED-" . $siteDetail["site_details_detail_info"] . "-SUCCESS" );
                     header("location:site-details.php". "?respCode=200&UPDATED-" . $siteDetail["site_details_detail_info"] . "-SUCCESS" );
 
                 }
@@ -109,11 +102,7 @@ if( $_SERVER["REQUEST_METHOD"] === "POST" )
 
                 $siteUrl = isset( $_POST[ $siteDetail["site_details_detail_info"] ] ) && !empty( $_POST[ $siteDetail["site_details_detail_info"] ] ) ? $_POST[ $siteDetail["site_details_detail_info"] ] : '0';
                 
-                // echo $siteUrl;
-                // exit;
 
-                // if ( !empty( $_POST[ $siteDetail["site_details_detail_info"] ] ) )
-                // {
 
                     if ( !updateSiteInformation($dbConn, $siteUrl , $siteDetail["ID"] )  )
                     {
@@ -137,11 +126,6 @@ if( $_SERVER["REQUEST_METHOD"] === "POST" )
                     }
     
 
-                // }
-                // else
-                // {
-                //     echo "EMpty";
-                // }
 
                 
             }

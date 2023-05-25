@@ -12,7 +12,6 @@ $userDetails = getUserDetailsUsingUsername($dbConn, $_SESSION["SSID-USERNAME"] )
 
 $role = $userDetails['user_role'];
 
-// if (  $role != 'admin' || $role != 'super-admin'  )
 
 if ( $userDetails['user_role'] != 'super-admin' && $userDetails['user_role'] != 'admin'  )
 {
@@ -24,7 +23,6 @@ if ( $userDetails['user_role'] != 'super-admin' && $userDetails['user_role'] != 
 
 <?php 
 
-// if ( $_SERVER )
 
 if( $_SERVER["REQUEST_METHOD"] === "POST" )
 {
@@ -33,9 +31,7 @@ if( $_SERVER["REQUEST_METHOD"] === "POST" )
 
     $userDetails = getUserDetailsUsingUsername($dbConn, $_SESSION["SSID-USERNAME"] );
     
-    // $a_user_name = $userDetails["user_"];
 
-    // $u_user_id = $_POST["u_user_password"];
     $u_user_name = $_POST["u_user_name"];
     $u_user_username = $_POST["u_user_username"];
     $u_user_password = $_POST["u_user_pass"];
@@ -133,8 +129,6 @@ if( $_SERVER["REQUEST_METHOD"] === "POST" )
 
     }
 
-    // unset($_SESSION["error_msg"]);
-    // unset($_SESSION["error_bg"]);
 
 
 }
