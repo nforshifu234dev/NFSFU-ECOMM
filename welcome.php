@@ -26,8 +26,8 @@
 
         $brand_logo = $_FILES["brand_logo"];
 
-        $currency_name = isset( $_POST["brand_default_currency_name"] ) && !empty( $_POST["brand_default_currency_name"] ) ? $_POST["brand_default_currency_name"] : "United States Dollar";
-        $currency_symbol = isset( $_POST["brand_default_currency_symbol"] ) && !empty( $_POST["brand_default_currency_symbol"] ) ? $_POST["brand_default_currency_symbol"] : "$";
+        $currency_name = isset( $_POST["brand_default_currency_name"] ) && !empty( $_POST["brand_default_currency_name"] ) ? $_POST["brand_default_currency_name"] : "Nigerian Naira";
+        $currency_symbol = isset( $_POST["brand_default_currency_symbol"] ) && !empty( $_POST["brand_default_currency_symbol"] ) ? $_POST["brand_default_currency_symbol"] : "₦";
 
         $db_name = $_POST["db_name"];
         $db_name = strtolower($db_name);
@@ -427,7 +427,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> NFSFU-ECOMM v0.01 ~ NFORSHIFU234.Dev Codes </title>
+    <title> NFSFU-ECOMM v1.0.0-alpha ~ NFORSHIFU234.Dev Codes </title>
     <script src="assets/lib/jquery-3.6.3.js"></script>
     <link rel="stylesheet" href="assets/lib/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -497,9 +497,9 @@
                         <div class="form-group mt-3 mb-3">
 
                             <label class="mb-3" for="brand_default_currency">Product Currency</label>
-                            <p class = "text-failure" ><b>NOTE:</b> By default, the currency dymbol is in USD($)</p>
-                            <input type="text" class="form-control" name="brand_default_currency_name" id="brand_default_currency_name" itemid="brand_default_currency_name" itemtype="input" placeholder="Enter your country's monetry name. E.x United States Dollar,Nigerian Naira... " value="<?php echo  isset($_POST["brand_default_currency"] ) && !empty($_POST["brand_default_currency"]) ? $_POST["brand_default_currency"] : '' ?>" >
-                            <input type="text" class="form-control mt-3" name="brand_default_currency_symbol" id="brand_default_currency_symbol" itemid="brand_default_currency_symbol" itemtype="input" placeholder="Enter your country's monetry icon. E.x $,... " value="<?php echo  isset($_POST["brand_default_currency"] ) && !empty($_POST["brand_default_currency"]) ? $_POST["brand_default_currency"] : '' ?>" >
+                            <p class = "text-failure" ><b>NOTE:</b> By default, the currency symbol is in Nigerian Naira(NGN) (₦)</p>
+                            <input type="text" class="form-control" name="brand_default_currency_name" id="brand_default_currency_name" itemid="brand_default_currency_name" itemtype="input" placeholder="Enter your country's monetry name. E.x Nigerian Naira, United States Dollar... " value="<?php echo  isset($_POST["brand_default_currency"] ) && !empty($_POST["brand_default_currency"]) ? $_POST["brand_default_currency"] : '' ?>" >
+                            <input type="text" class="form-control mt-3" name="brand_default_currency_symbol" id="brand_default_currency_symbol" itemid="brand_default_currency_symbol" itemtype="input" placeholder="Enter your country's monetry icon. E.x ₦,$,... " value="<?php echo  isset($_POST["brand_default_currency"] ) && !empty($_POST["brand_default_currency"]) ? $_POST["brand_default_currency"] : '' ?>" >
 
                         </div>
 
@@ -568,7 +568,7 @@
     <footer class="footer">
 
         <div class="text-center w-100 p-2">
-            <h5>Designed By <a href="https://instagram.com/nforshifu234.dev/" target="_blank" >NFORSHIFU234.Dev CODE</a></h5>
+            <h5>Designed & Developed By <a href="https://instagram.com/nforshifu234.dev/" target="_blank" >NFORSHIFU234.Dev CODE</a></h5>
         </div>
 
     </footer>

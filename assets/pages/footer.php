@@ -74,13 +74,13 @@
                     <a href="cart.php"> <i class="fas fa-shopping-basket"></i> Cart</a>
                 </li>
 
+                <li class="mb-2">
+                    <a href="feedback.php"> <i class="fab fa-wpforms"></i> Send Feedback</a>
+                </li>
+
             </ul>
 
         </div>
-
-
-        <!-- <div class="col"> COLUMN </div> -->
-        <!-- <div class="col"> COLUMN </div> -->
 
     </div>
 
@@ -91,6 +91,29 @@
     </div>
 
 </footer>
+
+<?php 
+    if ( isset( $_SERVER['REQUEST_URI'] ) && $_SERVER['REQUEST_URI'] != '/NFSFU-ECOMM/feedback.php' ):
+?>
+<div class="send-feedback-bottom-button-container">
+
+    <div class="send-feedback-bottom-button">
+
+        <a href="feedback.php" class="icon">
+        
+            <i class="fab fa-wpforms "></i>
+
+        </a>
+
+        <div class="message">
+            send feedback 🙂
+        </div>
+
+    </div>
+
+</div>
+
+<?php endif; ?>
 
 </body>
 

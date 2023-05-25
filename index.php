@@ -15,13 +15,6 @@ if ( chechkIfLoggedIn() )
 $total_number_of_products = count(getAllProducts($dbConn));
 $total_number_of_categories = count(getAllCategories($dbConn));
 
-// foreach ($categories as $key => $category)
-// {
-
-//     $category_name = $category["category_name"]; $category_slug = $category["category_slug"];
-//     var_dump($products);
-
-// }
 chechkSiteVisibilityStatusAndRedirect($dbConn);
 
 ?>

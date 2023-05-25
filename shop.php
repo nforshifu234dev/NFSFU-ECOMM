@@ -45,7 +45,7 @@ if( $_SERVER["REQUEST_METHOD"] === "GET" )
 
 <?php require_once 'assets/pages/head.php' ?>
 
-    <title><?php echo $site_titile ?> - Home</title>
+    <title><?php echo $site_titile ?> - Shop</title>
 </head>
 <body>
     
@@ -71,7 +71,7 @@ if( $_SERVER["REQUEST_METHOD"] === "GET" )
 
 var numberOfrecords = parseInt( document.getElementById("numberOfRecordsShown").innerHTML );
 
-if ( numberOfrecords < 50)
+if ( numberOfrecords < 12)
 {
     document.querySelector(".loadMoreButton").classList.add("display-none");
 }
@@ -118,7 +118,7 @@ else
 
                 if ( datas.length === 0 )
                 {
-                    document.querySelector(".loadMoreButton").innerHTML = "<h1>You Have Reached the end of all categories in the Database</h1>";
+                    document.querySelector(".loadMoreButton").innerHTML = "<h1>You Have Come To The End Of all products</h1>";
                 }
                 else
                 {
@@ -151,7 +151,7 @@ else
                                                                             productViewLink.innerHTML = '<i class="fas fa-eye"></i>';
 
                                                                     const productShareIcon = document.createElement("div");
-                                                                            productShareIcon.setAttribute("class", "icon view-product");
+                                                                            productShareIcon.setAttribute("class", "icon share-product");
                                                                             productShareIcon.innerHTML = '<i class="fas fa-share-alt"></i>';
                                                         productCardOverlay.appendChild(productViewLink);
                                                         productCardOverlay.appendChild(productShareIcon);
@@ -164,7 +164,7 @@ else
                                                                             
                                 const productName = document.createElement("a");
                                         productName.setAttribute("href", "product-details-page.php?product-id=" + data.product_id );
-                                        productName.setAttribute("src", "product-name card-title");
+                                        productName.setAttribute("class", "product-name card-title");
                                         productName.innerHTML = '<i class="fas fa-shopping-basket"  style="font-size: calc(100% - 0.35rem);"></i>' + data.product_name ;
 
                     
@@ -172,18 +172,18 @@ else
 
                                 const productCategory = document.createElement("a");
                                         productCategory.setAttribute("href", "category.php?category-slug=" + data.product_category );
-                                        productCategory.setAttribute("src", "product-name card-title");
+                                        productCategory.setAttribute("class", "product-name card-title");
                                         productCategory.innerHTML = '<i class="fas fa-tags"  style="font-size: calc(100% - 0.35rem);"></i>' + data.product_category ;
 
                                 const productPriceContainer = document.createElement("div");
                                         productPriceContainer.setAttribute("class", "product-price card-text");
 
                                             const currPrice = document.createElement("span");
-                                                    currPrice.innerHTML = data.product_curr_price;
+                                                    currPrice.innerHTML = <?php echo '"' . CURRENCY_SYMBOL . '"+' ?> data.product_curr_price;
                                                     currPrice.setAttribute("class", "curr-price");
 
                                             const prevPrice = document.createElement("span");
-                                                    prevPrice.innerHTML = data.product_prev_price;
+                                                    prevPrice.innerHTML = <?php echo '"' . CURRENCY_SYMBOL . '"+' ?> data.product_prev_price;
                                                     prevPrice.setAttribute("class", "prev-price");
 
                                         if ( parseInt( data.product_prev_price ) === 0 )
@@ -212,7 +212,7 @@ else
                         productCard.append(addToCartButtonCont);                  
                         // productCard.append();                  
 
-                        console.log(productCard);
+                        // console.log(productCard);
 
                         numberOfrecords += 1;
 

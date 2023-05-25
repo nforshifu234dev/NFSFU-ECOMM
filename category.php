@@ -57,7 +57,7 @@
 
 <?php require_once 'assets/pages/head.php' ?>
 
-    <title> <?php echo $categoryName; ?> Category - <?php echo $site_titile ?></title>
+    <title> Category '<?php echo $categoryName; ?>'  - <?php echo $site_titile ?></title>
 </head>
 <body>
     

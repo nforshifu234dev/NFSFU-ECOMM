@@ -1,4 +1,6 @@
 
+@font-face {font-family: Asap-SemiBold ;src: url("http://fonts.nforshifu.com/fonts/Asap-SemiBold.ttf");}.Asap-SemiBold{ font-family: Asap-SemiBold;}
+
 *{
     margin: 0;
     padding: 0;
@@ -15,6 +17,9 @@
 
 body{
     background: var(--white-color);
+    color: var(--black-color);
+    letter-spacing: 1px;
+    font-family: Asap-SemiBold, sans-serif;
 }
 
 a
@@ -595,7 +600,7 @@ a:hover
     line-break: strict;
     word-break: break-all;
 width:100%;
-color:red;
+/* color:red; */
 }
 
 
@@ -852,4 +857,63 @@ color:red;
 .pdct-card .btn:hover
 {
     text-decoration: none;
+}
+
+.send-feedback-bottom-button-container
+{
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+    z-index: 5000;
+}
+
+.send-feedback-bottom-button-container .send-feedback-bottom-button
+{
+    height: 60px;
+    width: 60px;
+    border-radius: 20%;
+    background: var(--green-color);
+    position: relative;
+}
+
+.send-feedback-bottom-button-container .send-feedback-bottom-button .icon
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white-color);
+    font-size: calc(100% + 0.5rem);
+}
+
+.send-feedback-bottom-button-container .send-feedback-bottom-button .message
+{
+    position: absolute;
+    top: -50px;
+    right: 25px;
+    width: max-content;
+    padding: 0.5rem;
+    text-transform: capitalize;
+    color: var(--white-color);
+    background: var(--green-color);
+    border-top-right-radius: 10px ;
+    border-top-left-radius: 10px ;
+    border-bottom-left-radius: 10px;
+}
+
+#errorContainer
+{
+    display: none;
+}
+
+.guide
+{
+    width: 100%;
+}
+
+.guide img,
+.guide video
+{
+    max-width: 100%;
 }

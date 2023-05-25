@@ -42,12 +42,12 @@
 
                     </div>
 
-                    <div class="guide">
+                    <div class="guide" id="guide">
 
                     <?php 
 
-                        $c = file_get_contents("ReadMe.md");
-                        echo $c;
+                        // $c = file_get_contents("ReadMe.md");
+                        // echo $c;
 
                     ?>
 
@@ -61,6 +61,27 @@
         </div>
 
     </div>
+
+        <script src="assets/lib/marked_3.3.0.min.js"></script>
+
+        <script>
+
+            const container = document.getElementById("guide");
+
+            fetch('ReadMe.md')
+                .then(resp => resp.text())
+                .then(data => {
+
+                    const htmlContents = marked(data);
+
+                    container.innerHTML = htmlContents;
+
+                })
+                .catch(error => {
+                    container.innerHTML = "<center><h1>AN ERROR OCCURED. KINDLY RELOAD THE PAGE. IF THIS MESSAGE  CI+ONTINUE KINDLY CONTACT ME.</h1></center>";
+                });
+
+        </script>
 
 
     <?php require_once 'assets/pages/footer.php' ?>

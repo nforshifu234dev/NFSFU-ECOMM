@@ -23,10 +23,6 @@ if( $_SERVER["REQUEST_METHOD"] === "GET" )
     
    $products = getAllProducts($dbConn, 0);
 
-//    echo "<pre>";
-//    var_dump($products);
-//    echo "</pre>";
-
    if ( isset( $_GET["offset"] ) && isset( $_GET["SSID"] ) && !empty( $_GET["offset"] ) && !empty( $_GET["SSID"] ) )
    {
         if ( !hash_equals( $_SESSION["SSID"],  $_GET["SSID"] )  )
@@ -37,10 +33,6 @@ if( $_SERVER["REQUEST_METHOD"] === "GET" )
 
         $offset = intval( $_GET["offset"] );
         $categories = getAllProducts($dbConn, $offset);
-
-        // echo "<pre>";
-        // var_dump($categories);
-        // echo "</pre>";
 
         $result = array(
             "status" => 200,

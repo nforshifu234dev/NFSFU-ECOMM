@@ -7,20 +7,24 @@
 
 <hr>
 
-## <h1 align="center" style="padding-top:1em;padding-bottom:1em;" >WELCOME TO <b>NFSH-ECOMM v0.01</b>  by <a href="https://www.instagram.com/nforshifu234.dev/" style="color:lightblue;" >NFORSHIFU234.Dev CODES</a>
+![Header](assets/origin/preview/NFSFU-ECOMM_dashboard.png)
+
+## <h1 align="center" style="padding-top:1em;padding-bottom:1em;" >WELCOME TO <b>NFSH-ECOMM v1.0.0-alpha</b>  by <a href="https://www.instagram.com/nforshifu234.dev/" style="color:lightblue;" >NFORSHIFU234.Dev CODES</a>
 </h1>
 
 <span id="top"></span>
 
-## <h1>ABOUT NFSH-ECOMM v0.01 </h1>
+## <h1>ABOUT NFSH-ECOMM v1.0.0-alpha </h1>
 
 <p>
 
 NFSH-ECOMM is an E-Commerce website package application for small startups. which they can easily just run the installation and go on with thier sales without having to worry about simple issues. Regarding performances, data update across servers, etc.
 
+This project is just an idea to test my skills in Web Devlopment.
+
 </p>
 
-## <h1 id="toolsUsed">TOOLS USED TO BUILD NFSH-ECOMM v0.01 </h1>
+## <h1 id="toolsUsed">TOOLS USED TO BUILD NFSH-ECOMM v1.0.0-alpha </h1>
 
 <ul>
 
@@ -49,15 +53,33 @@ NFSH-ECOMM is an E-Commerce website package application for small startups. whic
 </li>
 
 <li>
+	Marked JS v3.3.0 ~ For converting our ReadMe.md file to HTML Contents.
+</li>
+
+<li>
 	MySQL ~ For storing data in the database
+</li>
+
+<li>
+<h3>Font's Used</h3>
+
+<p>
+	- The font used for the FRONT END ( the pages where the customers can see is <b>Asap-SemiBold</b> )
+</p>
+
+<p>
+	- The font used for the BACK END ( the pages where the admins can see the dashboard is <b>LondrinaSolid-Light</b> )
+</p>
+
+
 </li>
 
 </ul>
 
-## <h1 id="features">FEATURES OF NFSH-ECOMM v0.01 </h1>
+## <h1 id="features">FEATURES OF NFSH-ECOMM v1.0.0-alpha </h1>
 
 <p>
-NFSH-ECOMM v0.01 features are listed below: 
+NFSH-ECOMM v1.0.0-alpha features are listed below: 
 </p>
 
 <ul>
@@ -182,12 +204,15 @@ Terms and Conditions Page
 <ol>
 
 <li>
-Extract the file from the .rar file to your preffered location in your htdocs folder or www folder
+Extract the file from the .rar file to your prefered location in your htdocs folder or www folder
 </li>
 
 <li>
 Open your browser and navigate to the folder (Example: If I extracted it to my htdocs folder on XAMPP Apache Server, then I will navigate to 
-	"localhost/bolu-site")
+	"localhost/NFSFU-ECOMM/")
+
+![NFSFU-ECOMM_browser_url](assets/origin/preview/NFSFU-ECOMM_browser_url.png)
+
 </li>
 
 <li>
@@ -195,15 +220,11 @@ Follow The Installaton Process and provide the neccessary information asked.
 </li>
 
 <li>
-After the installation is successful, click on the user icon at the right of the screen and it should take you to the login page
+After the installation is successful, you will be redirected to the dashboard page. 
 </li>
 
 <li>
-Fill in your database admin username and password you entered at the intallation phase. 
-</li>
-
-<li>
-Once the Login is successful, you will be redirected to the admin dashboard
+Once you are in the dashboard page, you can read steps on how to go about the application. To do this this is the first option with the title "Installation Guide" of your dashboard page.
 </li>
 
 <li>
@@ -240,28 +261,40 @@ By default, the visibility status of the site is set to the "COMING SOON" status
 
 <li>
 	<h3>ACTIVE</h3>
-	<p>
+
+![Coming Soon Preview](assets\origin\preview\NFSFU-ECOMM_homepage.png)
+
+<p>
 		The ACTIVE visibility status is the state where the site is opened to the users to view the products in stock and do their shopping.
 	</p>
 </li>
 
 <li>
-	<h3>COMING SOON</h3>
-	<p>
+<h3>COMING SOON</h3>
+
+![Coming Soon Preview](assets\origin\preview\NFSFU-ECOMM_coming-soon.png)
+
+<p>
 		The COMING SOON visibility status is the state where the site is opened to the users but the site has not been fully opened for buisness. 
 	</p>
 </li>
 
 <li>
 	<h3>MAINTAINACE</h3>
-	<p>
+
+![Coming Soon Preview](assets\origin\preview\NFSFU-ECOMM_maintainance.png)
+
+<p>
 		The MAINTAINACE visibility status is the state where the site is under maintainance. For example updating the codes of the site or the hardware infrastructures, etc
 	</p>
 </li>
 
 <li>
 	<h3>OFFLINE</h3>
-	<p>
+
+![Coming Soon Preview](assets\origin\preview\NFSFU-ECOMM_offline.png)
+
+<p>
 		The OFFLINE visibility status is the state where the site services to the users are restricted and the pages are not displayed.
 	</p>
 </li>
@@ -285,11 +318,18 @@ Login into your Super Admin account
 </li>
 
 <li>
-Navigate to "SITE INFORMATION" page. You can find the link on the side navigation or the first option of your dashboard page.
+
+![Header](assets/origin/preview/NFSFU-ECOMM_dashboard.png)
+
+Navigate to "SITE INFORMATION" page. You can find the link on the side navigation or the third option of your dashboard page.
 </li>
 
 <li>
 Click the edit icon (pen icon) and click the dropdown to change your staus
+
+![Header](assets/origin/preview/NFSFU-ECOMM_site-details.png)
+![Header](assets/origin/preview/NFSFU-ECOMM_site-detail-edit.png)
+
 </li>
 
 </ol>
@@ -313,11 +353,17 @@ Login into your Super Admin account
 </li>
 
 <li>
-Navigate to "CREATE NEW PRODUCT" page. You can find the link on the side navigation or the seventh (7) option of your dashboard page.
+Navigate to "CREATE NEW PRODUCT" page. You can find the link on the side navigation or the eighth (8) option of your dashboard page.
+
+![Header](assets/origin/preview/NFSFU-ECOMM_dashboard.png)
+
 </li>
 
 <li>
 Fill in the detils requested then click the "Add New Product Button"
+
+![Header](assets/origin/preview/NFSFU-ECOMM_add-product.png)
+
 </li>
 
 <li>
@@ -341,11 +387,17 @@ Login into your Super Admin account
 </li>
 
 <li>
-Navigate to "CREATE NEW CATEGORY" page. You can find the link on the side navigation or the eighth (8) option of your dashboard page.
+Navigate to "CREATE NEW CATEGORY" page. You can find the link on the side navigation or the nineth (9) option of your dashboard page.
+
+![Header](assets/origin/preview/NFSFU-ECOMM_dashboard.png)
+
 </li>
 
 <li>
 Fill in the detils requested then click the "Add New Category" Button
+
+![Header](assets/origin/preview/NFSFU-ECOMM_add-category.png)
+
 </li>
 
 
@@ -366,11 +418,18 @@ Login into your Super Admin account
 </li>
 
 <li>
-Navigate to "CREATE NEW USER" page. You can find the link on the side navigation or the nineth (9) option of your dashboard page.
+Navigate to "CREATE NEW USER" page. You can find the link on the side navigation or the tenth (10) option of your dashboard page.
+
+![Header](assets/origin/preview/NFSFU-ECOMM_dashboard.png)
+
 </li>
 
 <li>
 Fill in the detils requested then click the "Create Profile" Button
+
+![Header](assets/origin/preview/NFSFU-ECOMM_profile-create.png)
+
+
 </li>
 
 
@@ -381,6 +440,7 @@ Fill in the detils requested then click the "Create Profile" Button
 <div>
 <p>
 Now lets look at where to view all our products.
+
 </p>
 
 <ul>
@@ -390,7 +450,12 @@ Login into your Super Admin account
 </li>
 
 <li>
-Navigate to "VIEW ALL PRODUCTS" page. You can find the link on the side navigation or the third (3) option of your dashboard page.
+Navigate to "VIEW ALL PRODUCTS" page. You can find the link on the side navigation or the fourth (3) option of your dashboard page.
+
+![Header](assets/origin/preview/NFSFU-ECOMM_dashboard.png)
+
+![Header](assets/origin/preview/NFSFU-ECOMM_view-products.png)
+
 </li>
 
 
@@ -401,6 +466,8 @@ Navigate to "VIEW ALL PRODUCTS" page. You can find the link on the side navigati
 <div>
 <p>
 Now lets look at where to view all our products.
+
+
 </p>
 
 <ul>
@@ -410,7 +477,12 @@ Login into your Super Admin account
 </li>
 
 <li>
-Navigate to "VIEW ALL CATEGORIES" page. You can find the link on the side navigation or the fourth (4) option of your dashboard page.
+Navigate to "VIEW ALL CATEGORIES" page. You can find the link on the side navigation or the fifth (5) option of your dashboard page.
+
+![Header](assets/origin/preview/NFSFU-ECOMM_dashboard.png)
+
+![Header](assets/origin/preview/NFSFU-ECOMM_view-category.png)
+
 </li>
 
 
@@ -432,18 +504,29 @@ Login into your Super Admin account
 </li>
 
 <li>
-Navigate to "SITE INFORMATION" page. You can find the link on the side navigation or the first (1) option of your dashboard page.
+Navigate to "SITE INFORMATION" page. You can find the link on the side navigation or the third (3) option of your dashboard page.
+
+![Header](assets/origin/preview/NFSFU-ECOMM_dashboard.png)
+
 </li>
 
 <li>
 <p>
-THe only editable informations are the "SITE VISIBILITY" status and the "SITE NAME"
+The only editable informations are the "SITE VISIBILITY" status and the "SITE NAME"
+
+![Header](assets/origin/preview/NFSFU-ECOMM_site-details.png)
+
 </p>
 
+</li>
 <ul>
 
 <li>
-	To do this, all you have to do is to click the edit(pen) button and it will take to the dit page and then you edit and click the "Update Button:
+	To do this, all you have to do is to click the edit(pen) button and it will take to the edit page and then you edit and click the "Update Button:
+
+![Header](assets/origin/preview/NFSFU-ECOMM_site-detail-edit.png)
+
+
 </li>
 
 </ul>
@@ -467,13 +550,17 @@ Login into your Super Admin account
 </li>
 
 <li>
-Navigate to "VIEW ALL USERS" page. You can find the link on the side navigation or the fifth (4) option of your dashboard page.
+Navigate to "VIEW ALL USERS" page. You can find the link on the side navigation or the sixth (6) option of your dashboard page.
+
+![Header](assets/origin/preview/NFSFU-ECOMM_dashboard.png)
+
+![Header](assets/origin/preview/NFSFU-ECOMM_view-users.png)
+
 </li>
 
 <p>
 <mark>NOTE:</mark> By default you already have one <b>SUPER ADMIN USER</b> with the username of "<b>NFSFU-SA</b>" and password of "<b>NSFU-Pass123</b>"
 </p>
-
 
 </ul>
 </div>
@@ -493,11 +580,18 @@ Currently, there are only <b>4</b> type of ADMINS which are listed below:
 <li>
 
 <h3>
-	<b>User</b>
+
+![User Dashboard Image](assets/origin/preview/NFSFU-ECOMM_user_dashboard.png)
+
+<b>User</b>
+
+
 </h3>
 
 <p>
 This type of users can only view all products that are public. 
+
+
 </p>
 
 </li>
@@ -505,7 +599,11 @@ This type of users can only view all products that are public.
 <li>
 
 <h3>
-	<b>Admin</b>
+	
+![Admin Dashboard Image](assets/origin/preview/NFSFU-ECOMM_admin-dashboard.php.png)
+
+
+<b>Admin</b>
 </h3>
 
 <p>
@@ -517,7 +615,12 @@ This type of users can only create new users, view & edit all users and view all
 <li>
 
 <h3>
-	<b>Product Manager</b>
+
+![Product Manager Dashboard Image](assets/origin/preview/NFSFU-ECOMM_product-manager_dashboard.png)
+
+<b>Product Manager</b>
+
+
 </h3>
 
 <p>
@@ -529,7 +632,12 @@ This type of users can only create new products, create new categories, view all
 <li>
 
 <h3>
-	<b>SUPER ADMIN</b>
+
+![SUPER ADMIN Dashboard Image](assets\origin\preview\NFSFU-ECOMM_super-admin-dashboard.png)
+
+<b>SUPER ADMIN</b>
+	
+
 </h3>
 
 <p>
@@ -689,7 +797,7 @@ To to edit the pages above, you can just replace evverything in that file with a
 
 <hr>
 
-## <h1 align="center" style="padding-top:1em;padding-bottom:1em;" ><b>NFSH-ECOMM v0.01</b>  by <a href="https://www.instagram.com/nforshifu234.dev/" style="color:lightblue;" >NFORSHIFU234.Dev CODES</a>
+## <h1 align="center" style="padding-top:1em;padding-bottom:1em;" ><b>NFSH-ECOMM v1.0.0-alpha</b>  by <a href="https://www.instagram.com/nforshifu234.dev/" style="color:lightblue;" >NFORSHIFU234.Dev CODES</a>
 </h1>
 
 <div align="center" > 

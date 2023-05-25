@@ -2,20 +2,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="shortcut icon" href="<?php echo LOGO_URL ?>" type="image/x-icon">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="assets/libary/jquery-3.6.3.js"></script>
+    <script src="assets/lib/jquery-3.6.3.js"></script>
     <link rel="stylesheet" href="assets/lib/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
     <script src="assets/lib/all.min.js"></script>
-    <!-- <script src="assets/js/into.js"></script> -->
     <script src="assets/js/main.js"></script>
     <script src="assets/js/admin.js"></script>
 
     <style>
-	
+        
+        @font-face {font-family: LondrinaSolid-Light ;src: url("http://fonts.nforshifu.com/fonts/LondrinaSolid-Light.ttf");}.LondrinaSolid-Light{ font-family: LondrinaSolid-Light;}
+
+    
+                                                    
+        body
+        {
+            font-family: LondrinaSolid-Light, sans-serif;
+        }
+
         .navigation-bar .logo 
         {
             display: flex;
@@ -24,12 +33,10 @@
             height: 100%;
             display: flex;
             align-items: center;
-            /* border: rgb(255, 0, 93) solid 2px; */
         }
 	
         .navigation-bar .logo .list-inline-item
         {
-            /* border: 2px solid gold; */
             height: 100%;
             width: 100%;
             display: flex;
@@ -70,10 +77,8 @@
         .contents .page-contents
         {
             padding: 0.5rem;
-            /* width: 72%; */
             width: calc(100% - 25%);
             padding: 0.5rem;
-            /* border: rgb(255, 0, 93) solid 2px; */
         }
 
         .contents

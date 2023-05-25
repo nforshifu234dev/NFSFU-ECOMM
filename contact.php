@@ -13,7 +13,7 @@ else
 ?>
 <?php require_once 'assets/pages/head.php' ?>
 
-    <title> About Us  - <?php echo $site_titile?></title>
+    <title> Contact Us  - <?php echo $site_titile?></title>
 </head>
 <body>
     

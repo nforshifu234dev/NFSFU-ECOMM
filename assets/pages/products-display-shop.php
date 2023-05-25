@@ -4,7 +4,7 @@
 
     
         <?php  
-    $products = getAllVisibleProductsUsingLimits($dbConn, 0); 
+    $products = getAllVisibleProductsUsingLimits($dbConn, 0, 12); 
             
             $number_of_products = count($products);
             if ( $number_of_products != 0 ):
@@ -29,7 +29,7 @@
 
 
 
-                    <div class="products-container row row-cols-1 cols-4 row-cols-md-2 row-cols-lg-3 row-cols-xl-3 row-cols-xxl-5">
+                    <div class="products-container row row-cols-1 cols-4 row-cols-md-2 row-cols-lg-3 row-cols-xl-3 row-cols-xxl-3">
 
                         <?php 
                             foreach ($products as $key => $product) :

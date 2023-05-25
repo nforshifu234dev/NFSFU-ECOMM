@@ -55,7 +55,7 @@
             </span>
         </a>
 
-        <a href="y#" class="category-item bg-dark text-white-50">
+        <a href="https://github.com/nforshifu234dev/NFSFU-ECOMM/" target="_blank" class="category-item bg-dark text-white-50">
             <span class="mx-3" >
                             <i class="fas fa-clock"></i>
             </span>

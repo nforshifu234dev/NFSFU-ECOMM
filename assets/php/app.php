@@ -22,6 +22,16 @@
 
     $_SESSION['site_title'] = $site_titile;
 
+    if ( !chechkIfLoggedIn() )
+    {
+        ini_set("display_errors", false);
+    }
+    else
+    {
+        ini_set("display_errors", true);
+    }
+
+
 
 
 ?>

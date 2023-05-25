@@ -150,11 +150,13 @@ if( $_SERVER["REQUEST_METHOD"] === "POST" )
 
                         if ( 
                             $product['product_visibility'] !=  "1"
-                            
+                           
                             
                         ):
 
-                        var_dump($product['product_visibility']);
+                        if ( isset( $userDetails['user_role'] ) && $userDetails['user_role'] == 'super-admin' || $userDetails['user_role'] == 'product-manager'  ):
+
+                        // var_dump($product['product_visibility']);
 
                     ?>
 
@@ -162,7 +164,7 @@ if( $_SERVER["REQUEST_METHOD"] === "POST" )
                         <h1>This product is not yet published. <a href="edit-product.php?product-id=prdct-LhYNXFQHidD42zf9Gxrq3ZgbjREBCTKO5M6Psc8S">click here</a> to make it public </h1>
                     </div>
 
-                    <?php endif; ?>
+                    <?php endif; endif; ?>
 
                     <div class="heading">
                         
