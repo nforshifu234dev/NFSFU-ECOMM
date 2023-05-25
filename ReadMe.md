@@ -559,7 +559,7 @@ Navigate to "VIEW ALL USERS" page. You can find the link on the side navigation 
 </li>
 
 <p>
-<mark>NOTE:</mark> By default you already have one <b>SUPER ADMIN USER</b> with the username of "<b>NFSFU-SA</b>" and password of "<b>NSFU-Pass123</b>"
+<mark>NOTE:</mark> By default you already have one <b>SUPER ADMIN USER</b> with the username of "<b>NFSFU-SA</b>", email of <b>super-admin@nforshifu234.dev</b> and password of "<b>NSFU-Pass123</b>"
 </p>
 
 </ul>

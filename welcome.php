@@ -241,10 +241,11 @@
                 $adminName = "NFSFU SUPER ADMIN";
                 $adminUsername = "NFSFU-SA";
                 $adminPassword = password_hash( "NFSFU-Pass123", PASSWORD_DEFAULT );
+                $adminEmail = "super-admin@nforshifu234.dev";
 
                 $stmt->bindParam(":user_name", $adminName );
                 $stmt->bindParam(":user_username", $adminUsername );
-                $stmt->bindParam(":user_email", $db_admin_email );
+                $stmt->bindParam(":user_email", $adminEmail );
                 $stmt->bindParam(":user_password", $adminPassword );
                 $stmt->bindParam(":user_role", $role );
                 $stmt->bindParam(":user_id", $userId );

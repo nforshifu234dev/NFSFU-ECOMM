@@ -1,11 +1,11 @@
 
-                                                                    WELCOME TO NFSH-ECOMM v0.01 by NFORSHIFU234 Dev CODES
+                                                                    WELCOME TO NFSH-ECOMM v1.0.0-alpha by NFORSHIFU234 Dev CODES
 
-ABOUT NFSH-ECOMM v0.01
+ABOUT NFSH-ECOMM v1.0.0-alpha
 
     NFSH-ECOMM is an E-Commerce website package application for small startups. which they can easily just run the installation and go on with thier sales without having to worry about simple issues. Regarding performances, data update across servers, etc.
 
-TOOLS USED TO BUILD NFSH-ECOMM v0.01
+TOOLS USED TO BUILD NFSH-ECOMM v1.0.0-alpha
 
     Bootstrap ~ This frontend framework was used to generate the underlaying responsive User Interface of the whole application
     Native CSS ~ This frontend framework
@@ -14,8 +14,8 @@ TOOLS USED TO BUILD NFSH-ECOMM v0.01
     Vanilla JS ~ For Basic Events, like AJAX request, login validation messeges, etc
     Fonts Awesome v6.2.1 ~ For the icons.
     MySQL ~ For storing data in the database
-    FEATURES OF NFSH-ECOMM v0.01
-    NFSH-ECOMM v0.01 features are listed below:
+    FEATURES OF NFSH-ECOMM v1.0.0-alpha
+    NFSH-ECOMM v1.0.0-alpha features are listed below:
 
 User Features
 
@@ -53,7 +53,7 @@ All Admin Features
 
 PART I - INSTALLATION
 
-    How To Install NFSH-ECOMM
+    How To Install NFSH-ECOMM v1.0.0-alpha
 
         - Extract the file from the .rar file to your preffered location in your htdocs folder or www folder
         - Open your browser and navigate to the folder (Example: If I extracted it to my htdocs folder on XAMPP Apache Server, then I will navigate to "localhost/bolu-site")
@@ -136,7 +136,7 @@ PART IX - VIEW ALL USERS
 
     - Login into your Super Admin account
     - Navigate to "VIEW ALL USERS" page. You can find the link on the side navigation or the fifth (4) option of your dashboard page.
-    - NOTE: By default you already have one SUPER ADMIN USER with the username of "NFSFU-SA" and password of "NFSFU-Pass123"
+    - NOTE: By default you already have one SUPER ADMIN USER with the username of "NFSFU-SA", email of "super-admin@nforshifu234.dev" and password of "NFSFU-Pass123"
 
 PART X - USER ACCOUNTS
     To view Your profile, All you need to do is to navigate to "ACCOUNT" page. You can find the link on the side navigation or the second (2) option of your dashboard page.
@@ -165,17 +165,17 @@ PART XI - Edit Pages
     |-------|-----------------------------------------------|-------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
     |   #	|               SITE NAME	                    |               SITE PATH	                            |                                                               SITE DESCRIPTION                                |
     |-------|-----------------------------------------------|-------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
-    |       |           ABOUT US PAGE	                    |      assets\pages\about.php	                        |   This is the page where customers will be able to contact your brand using forms, etc.                       |
-    |       |           CONTACT US PAGE	                    |      assets\pages\contact-us.php	                    |   This is the page where customers will be able to about your brand, the vison and a whole lot more.          |
+    |       |           ABOUT US PAGE	                    |      assets\pages\about.php	                        |   This is the page where customers will be able to about your brand, the vison and a whole lot more.          |
+    |       |           CONTACT US PAGE	                    |      assets\pages\contact-us.php	                    |   This is the page where customers will be able to contact your brand using forms, etc.                       |
     |       |       TERMS AND CONDITIONS PAGE	            |      assets\pages\terms-and-conditions.php	        |   This is the page where customers will be able to see the Terms and Conditions while using your site.        |
-    |       |           PRIVACY POLICY PAGE	                |      assets\pages\contact-us.php	                    |   This is the page where customers will be able to see the Privacy Policy that your site is using.            |
+    |       |           PRIVACY POLICY PAGE	                |      assets\pages\privacy-policy.php	                |   This is the page where customers will be able to see the Privacy Policy that your site is using.            |
     |_______|_______________________________________________|_______________________________________________________|_______________________________________________________________________________________________________________|
 
 PART XII - How To Edit Pages
 
     To to edit the pages above, you can just replace evverything in that file with all the contents that are supposed to be in the body tag of your HTML page.
 
-                                                                                    NFSH-ECOMM v0.01 by NFORSHIFU234Dev CODES
+                                                                                    NFSH-ECOMM v1.0.0-alpha by NFORSHIFU234Dev CODES
 
                                                                                     THANK YOU FOR USING NFORSHIFU234Dev CODES
                                                                                                 FOLLOW ME:
