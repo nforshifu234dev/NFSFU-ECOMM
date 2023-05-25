@@ -365,7 +365,7 @@ if( $_SERVER["REQUEST_METHOD"] === "POST" )
                                             <option value="<?php echo $userDetails["user_role"] ?>"><?php echo $userDetails["user_role"] ?></option>
                                             <option value="a">Admin</option>
                                             <option value="u">User</option>
-                                            <option value="pm">Project Manager</option>
+                                            <option value="pm">Product Manager</option>
                                             <option value="sa">Super Admin</option>
 
                                         </select>

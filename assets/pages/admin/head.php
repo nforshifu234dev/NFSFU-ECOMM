@@ -16,7 +16,7 @@
 
     <style>
         
-        @font-face {font-family: LondrinaSolid-Light ;src: url("http://fonts.nforshifu.com/fonts/LondrinaSolid-Light.ttf");}.LondrinaSolid-Light{ font-family: LondrinaSolid-Light;}
+        @font-face {font-family: LondrinaSolid-Light ;src: url("assets/fonts/LondrinaSolid-Light.ttf");}.LondrinaSolid-Light{ font-family: LondrinaSolid-Light;}
 
     
                                                     

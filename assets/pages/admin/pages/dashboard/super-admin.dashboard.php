@@ -3,7 +3,7 @@
     <div class="icon">
         <i class="fas fa-file-medical-alt"></i>
     </div>
-    <h3 class="message text-center">MY SITE INFORMATION</h3>
+    <h3 class="message text-center">SITE INFORMATION</h3>
 </a>
 
 <a href="view-products.php" class="col card mb-3 dashboard-card mx-1">

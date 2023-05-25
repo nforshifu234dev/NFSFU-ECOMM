@@ -1,5 +1,5 @@
 
-                                                                    WELCOME TO NFSH-ECOMM v0.01 by NFORSHIFU234.Dev CODES
+                                                                    WELCOME TO NFSH-ECOMM v0.01 by NFORSHIFU234 Dev CODES
 
 ABOUT NFSH-ECOMM v0.01
 
@@ -175,10 +175,10 @@ PART XII - How To Edit Pages
 
     To to edit the pages above, you can just replace evverything in that file with all the contents that are supposed to be in the body tag of your HTML page.
 
-                                                                                    NFSH-ECOMM v0.01 by NFORSHIFU234.Dev CODES
+                                                                                    NFSH-ECOMM v0.01 by NFORSHIFU234Dev CODES
 
-                                                                                    THANK YOU FOR USING NFORSHIFU234.Dev CODES
+                                                                                    THANK YOU FOR USING NFORSHIFU234Dev CODES
                                                                                                 FOLLOW ME:
-                                                                                            Twitter: @NFORSHIFU234.DEV
+                                                                                            Twitter: @NFORSHIFU234DEV
                                                                                             Instagram: @NFORSHIFU234_DEV
-                                                                                            E-Mail: @Nnforshifu234.dev@gmai.com
+                                                                                            E-Mail: @nforshifu234.dev@gmai.com

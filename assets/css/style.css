@@ -1,5 +1,8 @@
 
-@font-face {font-family: Asap-SemiBold ;src: url("http://fonts.nforshifu.com/fonts/Asap-SemiBold.ttf");}.Asap-SemiBold{ font-family: Asap-SemiBold;}
+@font-face {
+    font-family: Asap-SemiBold ;
+    src: url("../fonts/Asap-SemiBold.ttf");
+}.Asap-SemiBold{ font-family: Asap-SemiBold;}
 
 *{
     margin: 0;
@@ -82,7 +85,6 @@ a:hover
     top: 0;
     z-index: 1500;
     background: var(--white-color);
-    /* border: red solid 2px; */
 }
 
 .navigation-bar .logo{
@@ -90,16 +92,20 @@ a:hover
     height: 100px;
     margin-right: 20px;
     font-size: calc(100% + 1rem);
-    /* border: rgb(50, 129, 160) solid 2px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .navigation-bar .logo img{
     width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    -o-object-fit: contain;
 }
 
 .navigation-bar .links-and-icon-container
 {
-    /* border: red solid 2px; */
     width: 100%;
     height: 100%;
     display: flex;
@@ -111,7 +117,6 @@ a:hover
 
 .navigation-links 
 {
-    /* border: rgb(0, 255, 179) solid 2px; */
     height: 100%;
 
 }
@@ -146,7 +151,6 @@ a:hover
     height: 100%;
     width: 100px;
     margin-right: 10px;
-    /* border: blue solid 2px; */
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -160,7 +164,6 @@ a:hover
 
 .navigation-bar .icons
 {
-    /* border: red solid 2px; */
 }
 
 .navigation-bar .icons .icon
@@ -185,9 +188,7 @@ a:hover
     position: absolute;
     top: 5px;
     right: 5px;
-    /* border: red solid 2px; */
     margin-bottom: 20px;
-    /* display: none; */
     
 }
 
@@ -207,11 +208,9 @@ a:hover
 .contents
 {
     width: 100%;
-    /* padding: 1rem; */
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
-    /* border: red solid 2px; */
 }
 
 .contents .categories
@@ -221,8 +220,6 @@ a:hover
     width: 30%;
     margin-right: 5%;
     padding-top: 20px;
-    /* border-right: var(--black-color) solid 1px; */
-    /* border-bottom: var(--black-color) solid 1px; */
 
         position: -webkit-sticky;
     position: sticky;
@@ -238,7 +235,6 @@ a:hover
 
 .contents .categories .category 
 {
-    /* border: red solid 2px; */
     margin-bottom: 10px;
 }
 
@@ -264,7 +260,6 @@ a:hover
     padding: 0 0.5rem;
     font-size: calc(100% + 0.2rem);
     color: var(--black-color);
-    /* border: red solid 2px; */
 }
 
 .category .category-item:hover
@@ -289,10 +284,8 @@ a:hover
 .contents .page-contents
 {
     padding: 0.5rem;
-    /* width: 72%; */
     width: 100%;
     padding: 0.5rem;
-    /* border: rgb(255, 0, 93) solid 2px; */
 }
 
 
@@ -305,7 +298,6 @@ a:hover
 
 .product-category .heading
 {
-    /* border: red solid 2px; */
     border-bottom: 1px solid #000;
     min-height: 50px;
     display: flex;
@@ -340,13 +332,10 @@ a:hover
 
 .products-container .product-card
 {
-    /* width: 33.33%; */
-    /* margin: 0 1px; */
     margin-bottom: 20px;
     padding: 0.5rem;
     border-radius: 0px;
     border-inline-start: var(--green-color) solid 1px;
-    /* border-inline-end: #000 solid 2px; */
 }
 
 
@@ -362,7 +351,6 @@ a:hover
     overflow: hidden;
     overflow: -moz-hidden-unscrollable;
     transition: 1s hover ease-in-out;
-    /* border: red solid 2px; */
 }
 
 .products-container .product-card .product-image img
@@ -491,7 +479,6 @@ a:hover
 
 .product-details .details .product-tags .tags-container
 {
-    /* border: red solid 2px; */
     max-width: 80%;
     height: max-content;
     display: flex;
@@ -600,7 +587,6 @@ a:hover
     line-break: strict;
     word-break: break-all;
 width:100%;
-/* color:red; */
 }
 
 
@@ -613,13 +599,6 @@ width:100%;
     padding: 2rem 0;
 }
 
-/* .product-details .images img
-{
-    width: 90%;
-    height: 90%;
-    object-fit: contain;
-} */
-
 .product-details .images .hero-image
 {
     display: flex;
@@ -627,8 +606,6 @@ width:100%;
     justify-content: center;
     height: 300px;
     width: 100%;
-    /* border: rgb(0, 149, 255) solid 2px; */
-    /* background: rgb(65, 65, 65); */
 }
 
 .product-details .images .hero-image img
@@ -656,7 +633,6 @@ width:100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    /* border: red solid 1px; */
 }
 
 .images .sub-images .item img
@@ -691,7 +667,6 @@ width:100%;
 {
     width: 150px;
     height: 150px;
-    /* border: blue solid 2px; */
     margin: 0 5px;
     margin-bottom: 10px;
 }
@@ -714,9 +689,7 @@ width:100%;
 
 .view-products-table .table .product-preview
 {
-    /* background-color: red; */
     height: 100px;
-    /* border: red solid 2px; */
 }
 
 .view-products-table .table .product-preview img
@@ -728,7 +701,6 @@ width:100%;
 
 .view-products-table .table tbody td
 {
-    /* background: red; */
     text-align: center;
 }
 
@@ -763,7 +735,6 @@ width:100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    /* border: var(--black-color ) solid 2px ; */
 }
  
 .error-container .error-msg-container .message
@@ -804,7 +775,6 @@ width:100%;
     display: flex;
     width: 100%;
     min-height: 100px;
-    /* border: red solid 2px; */
     padding: 0.5rem 0;
     border-top: #000 solid 1px;
     border-bottom: #000 solid 1px;
@@ -815,7 +785,6 @@ width:100%;
     width: 35%;
     height: 100%;
     margin-right: 10px;
-    /* border: rgb(0, 128, 255) solid 2px; */
 }
 
 .pdct-card .image img

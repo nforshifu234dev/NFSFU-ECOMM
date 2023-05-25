@@ -5,7 +5,7 @@
                         <i class="fas fa-file-medical-alt"></i>
         </span>
         <span class="category-text display-none-on-small">
-                        View Site Details
+                        Site Information
         </span>
     </a>
 

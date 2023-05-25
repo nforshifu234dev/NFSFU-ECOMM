@@ -9,7 +9,7 @@
 
 ![Header](assets/origin/preview/NFSFU-ECOMM_dashboard.png)
 
-## <h1 align="center" style="padding-top:1em;padding-bottom:1em;" >WELCOME TO <b>NFSH-ECOMM v1.0.0-alpha</b>  by <a href="https://www.instagram.com/nforshifu234.dev/" style="color:lightblue;" >NFORSHIFU234.Dev CODES</a>
+## <h1 align="center" style="padding-top:1em;padding-bottom:1em;" >WELCOME TO <b>NFSH-ECOMM v1.0.0-alpha</b>  by <a href="https://www.instagram.com/nforshifu234dev/" style="color:lightblue;" >NFORSHIFU234 Dev CODES</a>
 </h1>
 
 <span id="top"></span>
@@ -349,7 +349,7 @@ Now lets look at how to create new products.
 <ul>
 
 <li>
-Login into your Super Admin account
+Login into your Super Admin or Product Manager account
 </li>
 
 <li>
@@ -383,7 +383,7 @@ Now lets look at how to create new categories.
 <ul>
 
 <li>
-Login into your Super Admin account
+Login into your Super Admin or Product Manager account
 </li>
 
 <li>
@@ -414,7 +414,7 @@ Now lets look at how to create new users to run the site.
 <ul>
 
 <li>
-Login into your Super Admin account
+Login into your Super Admin or Admin account
 </li>
 
 <li>
@@ -446,7 +446,7 @@ Now lets look at where to view all our products.
 <ul>
 
 <li>
-Login into your Super Admin account
+Login into your any type of account
 </li>
 
 <li>
@@ -473,7 +473,7 @@ Now lets look at where to view all our products.
 <ul>
 
 <li>
-Login into your Super Admin account
+Login into your Super Admin or Product Manager account
 </li>
 
 <li>
@@ -546,7 +546,7 @@ Now lets look at where to view all our products.
 <ul>
 
 <li>
-Login into your Super Admin account
+Login into your Super Admin or Admin account
 </li>
 
 <li>
@@ -715,7 +715,7 @@ assets\pages\about.php
 </td>
 
 <td scope="row" style="border: solid 1px;" >
-This is the page where customers will be able to contact your brand using forms, etc.
+This is the page where customers will be able to know about your brand.
 </td>
 
 
@@ -736,7 +736,7 @@ assets\pages\contact-us.php
 </td>
 
 <td scope="row" style="border: solid 1px;" >
-This is the page where customers will be able to about your brand, the vison and a whole lot more.
+This is the page where customers will be able to contact you and get other informations on support information.
 </td>
 
 
@@ -774,7 +774,7 @@ PRIVACY POLICY PAGE
 </td>
 
 <td scope="row" style="border: solid 1px;" >
-assets\pages\contact-us.php
+assets\pages\privacy-policy.php
 </td>
 
 <td scope="row" style="border: solid 1px;" >
@@ -797,7 +797,7 @@ To to edit the pages above, you can just replace evverything in that file with a
 
 <hr>
 
-## <h1 align="center" style="padding-top:1em;padding-bottom:1em;" ><b>NFSH-ECOMM v1.0.0-alpha</b>  by <a href="https://www.instagram.com/nforshifu234.dev/" style="color:lightblue;" >NFORSHIFU234.Dev CODES</a>
+## <h1 align="center" style="padding-top:1em;padding-bottom:1em;" ><b>NFSH-ECOMM v1.0.0-alpha</b>  by <a href="https://www.instagram.com/nforshifu234dev/" style="color:lightblue;" >NFORSHIFU234 Dev CODES</a>
 </h1>
 
 <div align="center" > 
@@ -813,7 +813,7 @@ To to edit the pages above, you can just replace evverything in that file with a
 
 <hr>
 
-## <h1 align="center" style="padding-top:1em;padding-bottom:1em;" >THANK YOU FOR USING <a href="https://www.instagram.com/nforshifu234.dev/" style="color:lightblue;" >NFORSHIFU234.Dev CODES</a>
+## <h1 align="center" style="padding-top:1em;padding-bottom:1em;" >THANK YOU FOR USING <a href="https://www.instagram.com/nforshifu234.dev/" style="color:lightblue;" >NFORSHIFU234 Dev CODES</a>
 </h1>
 
 
@@ -824,16 +824,16 @@ To to edit the pages above, you can just replace evverything in that file with a
 
 
 <li>
-	<h2 style="display:inline-block;" >Twitter:</h2> <a href="https://www.twitter.com/nforshifu234.dev/" style="color:lightblue;" >@NFORSHIFU234.DEV</a>
+	<h2 style="display:inline-block;" >Twitter:</h2> <a href="https://www.twitter.com/nforshifu234dev/" style="color:lightblue;" >@NFORSHIFU234DEV</a>
 </li>
 
 <li>
-	<h2 style="display:inline-block;" >Instagram:</h2> <a href="https://www.instagram.com/nforshifu234.dev/" style="color:lightblue;" >@NFORSHIFU234_DEV</a>
+	<h2 style="display:inline-block;" >Instagram:</h2> <a href="https://www.instagram.com/nforshifu234dev/" style="color:lightblue;" >@NFORSHIFU234_DEV</a>
 </li>
 
 
 <li>
-	<h2 style="display:inline-block;" >E-Mail:</h2> <a href="https://www.instagram.com/nforshifu234.dev/" style="color:lightblue;" >@NFORSHIFU234.dev@gmai.com</a>
+	<h2 style="display:inline-block;" >E-Mail:</h2> <a href="mailto:nforshifu234.dev@gmail.com" style="color:lightblue;" >@NFORSHIFU234.dev@gmai.com</a>
 </li>
 
 

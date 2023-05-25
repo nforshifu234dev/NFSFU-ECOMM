@@ -221,7 +221,7 @@ if( $_SERVER["REQUEST_METHOD"] === "POST" )
                                         <option value="u">User</option>
                                         <option value="a">Admin</option>
                                         <option value="u">User</option>
-                                        <option value="pm">Project Manager</option>
+                                        <option value="pm">Product Manager</option>
                                         <?php if( $userDetails["user_role"] === 'super-admin' ): ?>
                                             <option value="sa">Super Admin</option>
                                         <?php endif; ?>

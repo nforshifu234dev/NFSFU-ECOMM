@@ -342,7 +342,7 @@
                         $_SESSION["SSID"] = generateRadmonStrings("ssid-");
                         $_SESSION["SSID-USERNAME"] = $db_admin_username;
 
-                        header( "Location: installation.php?respCode=200&creation-process=SUCCESS&message=WELCOME-TO-" .$brand_name );
+                        header( "Location: dashboard.php?respCode=200&creation-process=SUCCESS&message=WELCOME-TO-" .$brand_name );
 
                     }
                     else
@@ -391,7 +391,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> NFSFU-ECOMM v1.0.0-alpha ~ NFORSHIFU234.Dev Codes </title>
+    <title> NFSFU-ECOMM v1.0.0-alpha ~ NFORSHIFU234 Dev Codes </title>
     <script src="assets/lib/jquery-3.6.3.js"></script>
     <link rel="stylesheet" href="assets/lib/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -532,7 +532,7 @@
     <footer class="footer">
 
         <div class="text-center w-100 p-2">
-            <h5>Designed & Developed By <a href="https://instagram.com/nforshifu234.dev/" target="_blank" >NFORSHIFU234.Dev CODE</a></h5>
+            <h5>Designed & Developed By <a href="https://instagram.com/nforshifu234dev/" target="_blank" >NFORSHIFU234 Dev Codes</a></h5>
         </div>
 
     </footer>

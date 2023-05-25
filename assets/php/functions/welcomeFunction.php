@@ -141,13 +141,13 @@
                 if ( is_dir( $path) )
                 {
                     deleteAFolderAndItsContents( $path );
+                    rmdir($path);
                 }
                 else
                 {
                     unlink($path);
                 }
 
-                rmdir($path);
         
             }
 
