@@ -19,8 +19,7 @@
 
         if ( $checkIfRecordExist != 1 )
         {
-            $dir = '../NFSFU-ECOMM/product-not-found.php'; 
-            loadPage($dir);
+            loadProductNotFoundPage();
             exit;
         }
 
@@ -37,8 +36,7 @@
         if ( $count === 0 )
         {
 
-            $dir = '../NFSFU-ECOMM/product-not-found.php'; 
-            loadPage($dir);
+            loadProductNotFoundPage();
             exit;
         }
 

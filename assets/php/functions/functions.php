@@ -861,10 +861,18 @@ function loadPage(string $pathToFile)
 function load404Page()
 {
 
-    $dir = "../NFSFU-ECOMM\page-not-found.php";
+    $dir = "page-not-found.php";
     loadPage($dir);
 
 }
+
+function loadProductNotFoundPage()
+{
+    $dir = 'product-not-found.php'; 
+    loadPage($dir);
+    exit;
+}
+
 
 function getContentsFromAFile( string $filePath )
 {

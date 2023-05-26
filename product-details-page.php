@@ -49,8 +49,7 @@ if( $_SERVER["REQUEST_METHOD"] === "GET" )
             if ( $checkIfRecordExist != 1 )
             {
                 
-                $dir = '../NFSFU-ECOMM/product-not-found.php'; 
-                loadPage($dir);
+                loadProductNotFoundPage();
                 exit;
 
             }
@@ -74,8 +73,7 @@ if( $_SERVER["REQUEST_METHOD"] === "GET" )
             )
             {
 
-                $dir = '../NFSFU-ECOMM/product-not-found.php'; 
-                loadPage($dir);
+                loadProductNotFoundPage();
                 exit; 
 
             }
