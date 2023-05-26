@@ -258,7 +258,7 @@ By default, the visibility status of the site is set to the "COMING SOON" status
 <li>
 	<h3>ACTIVE</h3>
 
-![Coming Soon Preview](assets\origin\preview\NFSFU-ECOMM_homepage.png)
+![Coming Soon Preview](assets/origin/preview/NFSFU-ECOMM_homepage.png)
 
 <p>
 		The ACTIVE visibility status is the state where the site is opened to the users to view the products in stock and do their shopping.
