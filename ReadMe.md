@@ -829,7 +829,7 @@ To to edit the pages above, you can just replace evverything in that file with a
 
 
 <li>
-	<h2 style="display:inline-block;" >E-Mail:</h2> <a target="_blank" href="mailto:nforshifu234.dev@gmail.com" style="color:lightblue;" >@NFORSHIFU234.dev@gmai.com</a>
+	<h2 style="display:inline-block;" >E-Mail:</h2> <a target="_blank" href="mailto:nforshifu234.dev@gmail.com" style="color:lightblue;" >@NFORSHIFU234.dev@gmail.com</a>
 </li>
 
 
