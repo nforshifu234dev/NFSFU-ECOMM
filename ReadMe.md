@@ -7,7 +7,7 @@
 
 <hr>
 
-![Header](assets/origin/preview/NFSFU-ECOMM_dashboard.png)
+![Header](assets/origin/preview/NFSFU-ECOMM-BANNER.png)
 
 ## <h1 align="center" style="padding-top:1em;padding-bottom:1em;" >WELCOME TO <b>NFSH-ECOMM v1.0.0-alpha</b>  by <a target="_blank" href="https://www.instagram.com/nforshifu234dev/" style="color:lightblue;" >NFORSHIFU234 Dev CODES</a>
 </h1>
