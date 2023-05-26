@@ -1,76 +1,9 @@
 
-<p >
-
-<hr>
-
-![Header](assets/origin/preview/NFSFU-ECOMM-BANNER.png)
-
-## <h1 align="center" style="padding-top:1em;padding-bottom:1em;" >WELCOME TO <b>NFSH-ECOMM v1.0.0-alpha</b>  by <a target="_blank" href="https://www.instagram.com/nforshifu234dev/" style="color:lightblue;" >NFORSHIFU234 Dev CODES</a>
-</h1>
-
-<span id="top"></span>
-
-## <h1>ABOUT NFSH-ECOMM v1.0.0-alpha </h1>
-
-<p>
+![NFSFU-ECOMM Banner](https://github.com/nforshifu234dev/NFSFU-ECOMM/raw/main/assets/origin/preview/NFSFU-ECOMM-BANNER.png)
 
 NFSH-ECOMM is an E-Commerce website package application for small startups. which they can easily just run the installation and go on with thier sales without having to worry about simple issues. Regarding performances, data update across servers, etc.
 
-This project is just an idea to test my skills in Web Devlopment.
-
-</p>
-
-## <h1 id="toolsUsed">TOOLS USED TO BUILD NFSH-ECOMM v1.0.0-alpha </h1>
-
-<ul>
-
-<li>
-	Bootstrap ~ This frontend framework was used to generate the underlaying responsive User Interface of the whole application
-</li>
-
-<li>
-	Native CSS ~ This frontend framework
-</li>
-
-<li>
-	Vanilla PHP ~ The core language and tool powering the whole backend and data transmition. This app will run on all PHP versions.
-</li>
-
-<li>
-	JQuery v3.6.3 ~ To Use along side Bootstrap
-</li>
-
-<li>
-	Vanilla JS ~ For Basic Events, like AJAX request, login validation messeges, etc
-</li>
-
-<li>
-	Fonts Awesome v6.2.1 ~ For the icons.
-</li>
-
-<li>
-	Marked JS v3.3.0 ~ For converting our ReadMe.md file to HTML Contents.
-</li>
-
-<li>
-	MySQL ~ For storing data in the database
-</li>
-
-<li>
-<h3>Font's Used</h3>
-
-<p>
-	- The font used for the FRONT END ( the pages where the customers can see is <b>Asap-SemiBold</b> )
-</p>
-
-<p>
-	- The font used for the BACK END ( the pages where the admins can see the dashboard is <b>LondrinaSolid-Light</b> )
-</p>
-
-
-</li>
-
-</ul>
+This project is just an idea to test my skills in Web Development. At this point this is just for learning sake an time goes by I intend to work with people hopefully on this project.
 
 ## <h1 id="features">FEATURES OF NFSH-ECOMM v1.0.0-alpha </h1>
 
@@ -200,7 +133,15 @@ Terms and Conditions Page
 <ol>
 
 <li>
-Extract the file from the .rar file to your prefered location in your htdocs folder or www folder
+Firstly, you will need to have an Apache Server installed on your local machine or you have an Apache hosting platform on the web. If you don't have this. Then you download XAMPP Apache Server. You can download it from <a href="https://www.wikihow.com/Install-XAMPP-for-Windows/" target="_blank" >here</a>
+</li>
+
+<li>
+After you must have done that, you can now download NFSFU-ECOMM v1.0.0-alpha .zip file or .tar.gz file.
+</li>
+
+<li>
+Once your download is complete, extract the file from the .zip file or .tar.gz file to your preferred location in your htdocs folder or www folder.
 </li>
 
 <li>
@@ -629,7 +570,7 @@ This type of users can only create new products, create new categories, view all
 
 <h3>
 
-![SUPER ADMIN Dashboard Image](assets\origin\preview\NFSFU-ECOMM_super-admin-dashboard.png)
+![SUPER ADMIN Dashboard Image](assets/origin/preview/NFSFU-ECOMM_super-admin-dashboard.png)
 
 <b>SUPER ADMIN</b>
 	
@@ -732,7 +673,7 @@ assets\pages\contact-us.php
 </td>
 
 <td scope="row" style="border: solid 1px;" >
-This is the page where customers will be able to contact you and get other informations on support information.
+This is the page where customers will be able to contact you and get other information on support information.
 </td>
 
 
@@ -787,25 +728,12 @@ This is the page where customers will be able to see the Privacy Policy that you
 ## <h2 id="partXII">PART XII . 1 - How To Edit Pages</h2>
 <p>
 
-To to edit the pages above, you can just replace evverything in that file with all the contents that are supposed to be in the body tag of your HTML page.
+To to edit the pages above, you can just replace everything in that file with all the contents that are supposed to be in the body tag of your HTML page.
 
 </p>
 
 <hr>
 
-## <h1 align="center" style="padding-top:1em;padding-bottom:1em;" ><b>NFSH-ECOMM v1.0.0-alpha</b>  by <a target="_blank" href="https://www.instagram.com/nforshifu234dev/" style="color:lightblue;" >NFORSHIFU234 Dev CODES</a>
-</h1>
-
-<div align="center" > 
-	
-<a target="_blank" href="#top">~ Back To Top ~</a>
-<br>
-<a target="_blank" href="#features">~ Features ~</a>
-<br>
-<a target="_blank" href="#partIII">~ How To Add Products  ~</a>
-<br>
-
-</div>
 
 <hr>
 
