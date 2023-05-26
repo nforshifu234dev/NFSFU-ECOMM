@@ -1,5 +1,5 @@
 <div class="heading">
-    <h1>Privacy Policy</h2>
+    <h1>Privacy Policy</h1>
 </div>
 <section class="product-category">
 

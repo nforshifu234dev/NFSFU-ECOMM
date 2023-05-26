@@ -1,5 +1,5 @@
 <div class="heading">
-    <h1>Terms and Conditions</h2>
+    <h1>Terms and Conditions</h1>
 </div>
 <section class="product-category">
 
