@@ -1,8 +1,4 @@
-<style>
-	li,p{
-		font-size: 1.1rem;
-	}
-</style>
+
 <p >
 
 <hr>
