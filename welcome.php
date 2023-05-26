@@ -332,7 +332,7 @@
 
                     $string .= '?>';
                     
-                    if ( file_put_contents( "assets/php/variables.php", $string ) && file_put_contents("../NFSFU-ECOMM/status.file", 1) )
+                    if ( file_put_contents( "assets/php/variables.php", $string ) && file_put_contents("status.file", 1) )
                     {
                         
                         
