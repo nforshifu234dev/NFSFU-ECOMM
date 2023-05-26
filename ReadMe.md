@@ -272,7 +272,7 @@ By default, the visibility status of the site is set to the "COMING SOON" status
 <li>
 <h3>COMING SOON</h3>
 
-![Coming Soon Preview](assets\origin\preview\NFSFU-ECOMM_coming-soon.png)
+![Coming Soon Preview](assets/origin/preview/NFSFU-ECOMM_coming-soon.png)
 
 <p>
 		The COMING SOON visibility status is the state where the site is opened to the users but the site has not been fully opened for buisness. 
@@ -282,7 +282,7 @@ By default, the visibility status of the site is set to the "COMING SOON" status
 <li>
 	<h3>MAINTAINACE</h3>
 
-![Coming Soon Preview](assets\origin\preview\NFSFU-ECOMM_maintainance.png)
+![Coming Soon Preview](assets/origin/preview/NFSFU-ECOMM_maintainance.png)
 
 <p>
 		The MAINTAINACE visibility status is the state where the site is under maintainance. For example updating the codes of the site or the hardware infrastructures, etc
@@ -292,7 +292,7 @@ By default, the visibility status of the site is set to the "COMING SOON" status
 <li>
 	<h3>OFFLINE</h3>
 
-![Coming Soon Preview](assets\origin\preview\NFSFU-ECOMM_offline.png)
+![Coming Soon Preview](assets/origin/preview/NFSFU-ECOMM_offline.png)
 
 <p>
 		The OFFLINE visibility status is the state where the site services to the users are restricted and the pages are not displayed.
