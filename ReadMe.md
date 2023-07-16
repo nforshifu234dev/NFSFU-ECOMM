@@ -1,9 +1,90 @@
 
-![NFSFU-ECOMM Banner](https://github.com/nforshifu234dev/NFSFU-ECOMM/raw/main/assets/origin/preview/NFSFU-ECOMM-BANNER.png)
+![NFSFU-ECOMM Banner](assets/origin/preview/NFSFU-ECOMM-BANNER.png)
 
 NFSH-ECOMM is an E-Commerce website package application for small startups. which they can easily just run the installation and go on with thier sales without having to worry about simple issues. Regarding performances, data update across servers, etc.
 
 This project is just an idea to test my skills in Web Development. At this point this is just for learning sake an time goes by I intend to work with people hopefully on this project.
+
+## <h1 id="features">FEATURES OF NFSH-ECOMM v1.0.4-alpha </h1>
+
+<p>
+
+<h2>What's New?</h2>
+
+<ul>
+
+<li>
+
+<h3>Installation Error Clearance</h3>
+
+<p>
+	The error of Access Denied of some files during the installation process has been fixed in this version.
+</p>
+
+</li>
+
+
+<li>
+
+<h3>Updated the logo parent logo for the site.</h3>
+
+<p>
+The logo for NFORSHIFU234 Dev have been updated.
+</p>
+
+</li>
+
+<li>
+
+<h3>Updated Error Message shown on Home page when no products is visible or when no product under a category is visible.</h3>
+
+<p>
+In this version, I have added an error to show on the Home Page(index.php) when the admins have not uploaded a product or made a product visible or when a category has no visible product under its category.
+</p>
+
+</li>
+
+<li>
+
+<h3>Accomodation for additional CSS and JS contents</h3>
+
+<p>
+
+In this version, I have added 2 files <b>custom.css</b> and <b>custom.js</b>. These files will be used to handle additional styling for the website. For example pages like (contact.php, about-us.php, terms-and-conditions.php, privacy-policy.php) will require additional CSS or JS functionality, so these files aid with that.
+
+</p>
+
+<p>
+<b>custom.css</b> is located at "assets\css\custom.css". <br>
+<b>custom.js</b> is located at "assets\js\custom.js".
+</p>
+
+</li>
+
+<li>
+
+<h3>Errors are only displayed to login users.</h3>
+<p>
+
+</p>
+In this version, Errors that occur in the site are only visible to users that are logged in. If a user is not logged in and an error occurs, then the user sees a blank section or page depending on the situation.
+</li>
+
+<li>
+
+<h3>Updated some few code lines on some admin pages.</h3>
+<p>
+Updated some few lines of the dashboard.php, and other admin pages. Nothing major.
+</p>
+
+</li>
+
+
+
+
+</ul>
+
+</p>
 
 ## <h1 id="features">FEATURES OF NFSH-ECOMM v1.0.0-alpha </h1>
 
@@ -157,30 +238,17 @@ Follow The Installaton Process and provide the neccessary information asked.
 </li>
 
 <li>
-After the installation is successful, you will be redirected to the coming soon page. 
+After the installation is successful, you will be redirected to the dashboard page. 
 </li>
 
 <li>
-Click on the dashboard button at the top menu. Once you are in the dashboard page, you can read steps on how to go about the application. To do this this is the first option with the title "Installation Guide" of your dashboard page.
+By default, the visibility status of the site is set to the "COMING SOON" status. To change that see "<a href="#partII">Part II</a>"
 </li>
 
 <li>
-By default, the visibility status of the site is set to the "COMING SOON" status. To change that see "<a target="_blank" href="#partII">Part II</a>"
+ If you wish to add products see "<a href="#partIII">Part III</a>" for more information, if you wish to add categories, see "<a hre="#partIV">PART IV</a>", if you wish to add users, see "<a href="#partV">PART V</a>"
 </li>
 
-<li>
- If you wish to add products see "<a target="_blank" href="#partIII">Part III</a>" for more information, if you wish to add categories, see "<a hre="#partIV">PART IV</a>", if you wish to add users, see "<a target="_blank" href="#partV">PART V</a>"
-</li>
-
-<!-- <li>
-
-</li>
-
-<li>
-
-</li>
-
-<li> -->
 
 </li>
 
@@ -518,7 +586,6 @@ Currently, there are only <b>4</b> type of ADMINS which are listed below:
 
 <h3>
 
-![User Dashboard Image](assets/origin/preview/NFSFU-ECOMM_user_dashboard.png)
 
 <b>User</b>
 
@@ -531,13 +598,14 @@ This type of users can only view all products that are public.
 
 </p>
 
+![User Dashboard Image](assets/origin/preview/NFSFU-ECOMM_user_dashboard.png)
+
 </li>
 
 <li>
 
 <h3>
 	
-![Admin Dashboard Image](assets/origin/preview/NFSFU-ECOMM_admin-dashboard.php.png)
 
 
 <b>Admin</b>
@@ -547,13 +615,14 @@ This type of users can only view all products that are public.
 This type of users can only create new users, view & edit all users and view all products that are public. 
 </p>
 
+![Admin Dashboard Image](assets/origin/preview/NFSFU-ECOMM_admin-dashboard.php.png)
+
 </li>
 
 <li>
 
 <h3>
 
-![Product Manager Dashboard Image](assets/origin/preview/NFSFU-ECOMM_product-manager_dashboard.png)
 
 <b>Product Manager</b>
 
@@ -564,13 +633,14 @@ This type of users can only create new users, view & edit all users and view all
 This type of users can only create new products, create new categories, view all products that are both public and private, view all categories, edit products and edit categories. 
 </p>
 
+![Product Manager Dashboard Image](assets/origin/preview/NFSFU-ECOMM_product-manager_dashboard.png)
+
 </li>
 
 <li>
 
 <h3>
 
-![SUPER ADMIN Dashboard Image](assets/origin/preview/NFSFU-ECOMM_super-admin-dashboard.png)
 
 <b>SUPER ADMIN</b>
 	
@@ -597,6 +667,8 @@ This type of users can do all the activities that the other admins do. The disti
 </ul>
 
 </p>
+
+![SUPER ADMIN Dashboard Image](assets/origin/preview/NFSFU-ECOMM_super-admin-dashboard.png)
 
 </li>
 
@@ -737,7 +809,7 @@ To to edit the pages above, you can just replace everything in that file with al
 
 <hr>
 
-## <h1 align="center" style="padding-top:1em;padding-bottom:1em;" >THANK YOU FOR USING <a target="_blank" href="https://www.instagram.com/nforshifu234dev/" style="color:lightblue;" >NFORSHIFU234 Dev CODES</a>
+## <h1 align="center" style="padding-top:1em;padding-bottom:1em;" >THANK YOU FOR USING <a target="_blank" href="https://www.instagram.com/nforshifu234dev/" style="color:lightblue;" >NFORSHIFU234 Dev</a>
 </h1>
 
 

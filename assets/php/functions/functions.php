@@ -144,11 +144,11 @@ function getAllSiteInformation(PDO $dbConn):mixed
     $stmt->execute();
 
 
-    $products = $stmt->fetchAll();
+    $result = $stmt->fetchAll();
 
 
 
-    return $products;
+    return $result;
 
 }
 
@@ -163,11 +163,11 @@ function getAllUsers(PDO $dbConn, int $offsetValue = 0, int $number_of_items = 5
     $stmt->execute();
 
 
-    $products = $stmt->fetchAll();
+    $users = $stmt->fetchAll();
 
 
 
-    return $products;
+    return $users;
 
 }
 
@@ -202,11 +202,11 @@ function getAllCategories(PDO $dbConn, int $offsetValue = 0, int $number_of_item
     $stmt->execute();
 
 
-    $products = $stmt->fetchAll();
+    $categories = $stmt->fetchAll();
 
 
 
-    return $products;
+    return $categories;
 
 }
 

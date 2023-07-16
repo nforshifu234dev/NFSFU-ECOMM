@@ -1,6 +1,27 @@
 <div class="page-contents">
 
+    <?php 
 
+        $visibleCaty = [];
+
+        foreach( $categories as $caty )
+        {
+
+            if ( count( getAllVisibleProductsUsingCategoryQueryUsingLimits($dbConn,$caty["category_slug"])  ) < 1  ) 
+            {
+                array_push($visibleCaty, true);
+            }
+
+
+        } 
+
+
+        if ( count($visibleCaty) > 1 )
+        {
+            loadNoProductsMessage(  $dbConn );
+        }
+
+    ?>
 
     <?php foreach ($categories as $key => $category): $category_name = $category["category_name"]; $category_slug = $category["category_slug"];?>
     

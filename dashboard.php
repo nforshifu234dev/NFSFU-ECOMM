@@ -6,6 +6,8 @@
 $dbConn = $connectionHandler;
 $site_titile = getSiteName($dbConn)[0];
 
+define("PARENT_DIR", __DIR__);
+
 ?>
 
 <?php 
@@ -67,7 +69,7 @@ $total_number_of_users = count(getAllUsers($dbConn));
 
                 <div class="row row-cols-1 cols-4 row-cols-md-2 row-cols-lg-3 row-cols-xl-3 row-cols-xxl-5" >
 
-                <a href="installation.php" class="col card mb-3 dashboard-card mx-1">
+                <a href="welcome.php" class="col card mb-3 dashboard-card mx-1">
                     <div class="icon">
                         <i class="fas fa-info-circle"></i>
                     </div>

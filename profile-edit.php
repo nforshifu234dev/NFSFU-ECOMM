@@ -2,6 +2,7 @@
 <?php include_once __DIR__ . "/assets/php/admin.php" ?>
 
 <?php 
+define("PARENT_DIR", __DIR__);
 
 if ( !chechkIfLoggedIn() )
 {
@@ -344,7 +345,7 @@ if( $_SERVER["REQUEST_METHOD"] === "POST" )
                                 <div class="form-group mt-3 mb-3">
 
                                     <label class="mb-3" for="u_user_name"> <i class="fas fa-user-ninja"></i> <?php echo $profileName ?> Name</label>
-                                    <input type="text" class="form-control" name="u_user_name" id="u_user_name" itemid="u_user_name" itemtype="input" value="<?php echo $profileName ?>" >
+                                    <input type="text" class="form-control" name="u_user_name" id="u_user_name" itemid="u_user_name" itemtype="input" value="<?php echo $userDetails["user_name"] ?>" >
 
                                 </div>
 

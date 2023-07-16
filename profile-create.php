@@ -2,6 +2,7 @@
 <?php include_once __DIR__ . "/assets/php/admin.php" ?>
 
 <?php 
+define("PARENT_DIR", __DIR__);
 
 if ( !chechkIfLoggedIn() )
 {

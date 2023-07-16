@@ -9,7 +9,21 @@ if ( chechkSiteVisibilityStatus($dbConn) === 1 ):
 
 $catys = getCategoriesRandomly($dbConn, 4); 
 
-if ( count( $catys ) != 0 ) :
+$visibleCaty = [];
+
+foreach( $catys as $caty )
+{
+
+    if ( count( getAllVisibleProductsUsingCategoryQueryUsingLimits($dbConn,$caty["category_slug"])  ) >= 1  ) 
+    {
+        array_push($visibleCaty, true);
+    }
+
+
+} 
+
+
+if ( count( $catys ) != 0 && count($visibleCaty) != 0 ) :
 
 
 ?>
@@ -25,6 +39,8 @@ if ( count( $catys ) != 0 ) :
             
         
             foreach( $catys as $caty ): 
+
+                // if ( getAllVisibleProductsUsingCategoryQueryUsingLimits($dbConn, $caty) ):
 
                 
         ?>
@@ -103,5 +119,6 @@ if ( count( $catys ) != 0 ) :
     <?php endif; endif; ?>
 
     
+
 
 </div>

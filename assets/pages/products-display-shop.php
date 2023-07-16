@@ -114,8 +114,8 @@
         <?php else: ?>
         
             <?php 
-            loadNoProductsMessage(  $dbConn );
-        ?>
+                loadNoProductsMessage(  $dbConn );
+            ?>
         
 
         <?php endif; ?> 

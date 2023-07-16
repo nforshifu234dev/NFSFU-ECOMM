@@ -7,7 +7,7 @@
     if ( chechkIfDataBaseExists($dbConn, $dbName ) != 1 )
     {
         file_put_contents("status.file", "");
-        header("location: welcome.php");
+        header("location: installation.php");
     }
     
 

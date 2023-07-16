@@ -24,7 +24,6 @@
         }
 
 
-
         $category = getCategoryDetails($dbConn, $id);
 
         $categoryName = $category["category_name"];

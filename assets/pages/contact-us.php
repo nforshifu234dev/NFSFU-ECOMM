@@ -5,7 +5,7 @@
     
     <div class="btn-group">
 
-        <a href="mailto:<?php echo DB_ADMIN_EMAIL ?>" class="btn btn-primary mx-2">
+        <a href="mailto:<?php echo DB_ADMIN_EMAIL ;?>" class="btn btn-primary mx-2">
                 <i class="fas fa-envelope"></i>
                 Send Us a Mail
         </a>

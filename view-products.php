@@ -1,6 +1,8 @@
 <?php include_once __DIR__ . "/assets/php/app.php" ?>
 <?php 
 
+define("PARENT_DIR", __DIR__);
+
 if ( !chechkIfLoggedIn() )
 {
     header("location: login.php?returnUrl=" . htmlspecialchars($_SERVER['PHP_SELF']) );

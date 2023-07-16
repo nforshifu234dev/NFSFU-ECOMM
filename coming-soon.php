@@ -12,7 +12,7 @@ if ( chechkSiteVisibilityStatus($dbConn) !=  3)
 
 <?php require_once 'assets/pages/head.php' ?>
 
-    <title><?php echo $site_titile ?> - Home</title>
+    <title><?php echo $site_titile ?> - Coming Soon</title>
 
     <style>
 

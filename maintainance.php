@@ -14,7 +14,7 @@ include_once "assets/pages/head.php";
 
 ?>
 
-    <title> CURRENTLY OFFLINE  - <?php echo $site_titile ?></title>
+    <title> CURRENTLY UNDERGOING MAINTANANCE - <?php echo $site_titile ?></title>
 </head>
 <body>
     

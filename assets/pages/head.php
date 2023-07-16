@@ -9,5 +9,7 @@
     <link rel="stylesheet" href="assets/lib/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
     <script src="assets/lib/all.min.js"></script>
     <script src="assets/js/main.js" ></script>
+    <script src="assets/js/custom.js" ></script>

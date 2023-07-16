@@ -27,8 +27,9 @@ else
                 <?php require_once 'assets/pages/sidebar.php' ?>
 
                 <div class="page-contents">
+
                 
-                <?php echo getContentsFromAFile("assets/pages/contact-us.php"); ?>
+                <?php include_once "assets/pages/contact-us.php" ; ?>
 
                 </div>
 

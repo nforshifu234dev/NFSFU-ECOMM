@@ -28,13 +28,13 @@
 
         <?php 
 
-            if( file_exists( __DIR__ . './pages/sidenav/' . $userDetails['user_role'] . '.sidebar.php' ) )
+            if( file_exists( PARENT_DIR . "/assets/pages/admin/pages/sidenav/" . $userDetails['user_role'] . '.sidebar.php' ) )
             {
-                include_once   __DIR__ . "./pages/sidenav/" . $userDetails['user_role'] . ".sidebar.php";
+                include_once   PARENT_DIR . "/assets/pages/admin/pages/sidenav/" . $userDetails['user_role'] . '.sidebar.php';
             }
             else
             {
-                echo "false";
+                echo "Could Not Load The Menu Pages.";
             }
 
          

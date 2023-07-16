@@ -1,3 +1,3 @@
 <?php
-$brandName="NFSFU-ECOMM";
+$brandName="Hall Delivery";
 ?>

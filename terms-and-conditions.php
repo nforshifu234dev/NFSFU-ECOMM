@@ -1,7 +1,15 @@
 
 <?php include_once "assets/php/app.php" ?>
 <?php
-chechkSiteVisibilityStatusAndRedirect($dbConn);
+
+if ( chechkSiteVisibilityStatus($dbConn) != 3 || chechkSiteVisibilityStatus($dbConn) === 1 )
+{
+
+    chechkSiteVisibilityStatusAndRedirect($dbConn);
+
+}
+
+
 ?>
 <?php require_once 'assets/pages/head.php' ?>
 
