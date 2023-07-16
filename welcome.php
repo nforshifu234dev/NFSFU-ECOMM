@@ -5,7 +5,7 @@
 
 <?php require_once 'assets/pages/head.php' ?>
 
-    <title>Installation Guide Of NFSFU-ECOMM v0.01 </title>
+    <title>Installation Guide Of NFSFU-ECOMM v1.0.4-alpha </title>
 
     <style>
 
