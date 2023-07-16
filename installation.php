@@ -205,9 +205,9 @@
                 0 => array( "SITE_NAME", $brand_name ),
                 2 => array( "SITE_VISIBILITY", 3 ),
                 3 => array( "SITE_BASE_URL", "NULL" ),
-                3 => array( "SITE_LOGO", $logoUrl ),
-                4 => array( "SITE_CREATION_DATE", date( 'Y-m-d H:i:s') ),
-                5 => array( "SITE_LAST_UPDATED_DATE", date( 'Y-m-d H:i:s') ),
+                4 => array( "SITE_LOGO", $logoUrl ),
+                5 => array( "SITE_CREATION_DATE", date( 'Y-m-d H:i:s') ),
+                6 => array( "SITE_LAST_UPDATED_DATE", date( 'Y-m-d H:i:s') ),
             );
 
             $q = "INSERT INTO `table_site_details` (`site_details_detail_info`, `site_details_detail_info_value`) VALUES (:title, :answer) ";
