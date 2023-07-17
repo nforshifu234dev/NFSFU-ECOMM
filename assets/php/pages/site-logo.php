@@ -1,4 +1,4 @@
 <?php
-$logoPath="assets/users/Hall Delivery-USR-ID-fgGovhxH6CLNleinQbTM9sDRqjZWYdSp2IaK1k75/media/images/20230716223847_IMG-20230710-WA0015.jpg";
+$logoPath="assets/users/NFORSHIFU234DEV-USR-ID-Kal3BA4uHNG027WtFvripSbyQzMgJYdXmE1CnI6P/media/images/nforshifu234-logo.png";
 define( "LOGO_URL", " $logoPath");
 ?>
